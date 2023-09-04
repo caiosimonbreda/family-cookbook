@@ -1,0 +1,30 @@
+/* Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Stinger Trial */
+
+@font-face {
+  font-family: "Stinger Trial";
+  src: "../public/StingerTrial-Regular.ttf"
+}
+
+
+@layer base {
+  html {
+    @apply h-full bg-gradient-to-br overflow-hidden from-amber-300 via-amber-400 to-amber-500 dark:bg-neutral-900;
+  }
+  /* ... */
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
