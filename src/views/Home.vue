@@ -226,7 +226,7 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
 <template>
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
         <section class="flex flex-col w-full min-h-[calc(100vh-128px)] max-h-[1000px] snap-center">
-            <h1 class="font-stinger text-[16vw] md:text-[12.5vw] leading-[80%]  p-8">The family recipes that nurtured our
+            <h1 class="font-stinger text-[14vw] md:text-[12.5vw] leading-[85%] p-8 pt-3">The family recipes that nurtured our
                 love of food</h1>
             <!-- <a href="#recipe-list" class="absolute left-[50%] bottom-12 cursor-pointer animate-bounce"><span
                     class="material-symbols-outlined text-[90px] font-light">
@@ -234,14 +234,14 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
                 </span></a> -->
 
             <div class="flex flex-row w-full h-full items-end">
-                <a href="#recipe-list" class="relative w-fit left-[45%] cursor-pointer animate-bounce mt-4"><span
+                <a href="#recipe-list" class="relative w-fit left-[48%] cursor-pointer animate-bounce mt-4"><span
                         class="material-symbols-outlined text-[90px] font-light">
                         expand_more
                     </span></a>
             </div>
         </section>
         <section class="flex flex-row w-full snap-start" id="recipe-list">
-            <ol class="flex flex-col gap-6 font-jost p-10 text-2xl flex-wrap">
+            <ol class="flex flex-col gap-6 font-jost p-10 text-xl flex-wrap">
                 <li class="cursor-pointer" v-for="recipe in recipeList" @click="goToRecipe(recipe)">{{ `${recipe.id}.
                                     ${recipe.title}` }}</li>
             </ol>

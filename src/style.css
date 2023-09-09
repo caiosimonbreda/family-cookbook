@@ -9,7 +9,16 @@
 
 @font-face {
   font-family: "Stinger Trial";
-  src: "../public/StingerTrial-Regular.ttf"
+  src: url("/StingerTrial-Regular.ttf") format("truetype")
+  /* "../public/StingerTrial-Regular.ttf" */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 
