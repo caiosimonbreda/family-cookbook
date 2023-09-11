@@ -47,9 +47,10 @@ const handleStepClick = (index: number) => {
 
 <template>
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
-        <section class="flex flex-col w-full min-h-[calc(100vh-128px)] max-h-[1000px] snap-center border-b-2 border-black">
-            <h1 class="font-stinger text-[14vw] leading-[85%] p-8">{{ title }}</h1>
-            <div class="flex flex-row w-full h-full items-end justify-end p-8">
+        <section
+            class="flex flex-col w-full min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
+            <h1 class="font-stinger text-[22vw] hyphens-auto md:text-[14.5vw] leading-[85%] p-8">{{ title }}</h1>
+            <div class="flex flex-row w-full h-full items-end justify-end p-8 pb-24 md:p-8">
                 <a href="#ingredients">
                     <button class="flex font-jost outline outline-2 outline-black text-xl items-center px-4 py-2">
                         Get Cooking
@@ -60,11 +61,26 @@ const handleStepClick = (index: number) => {
                 </a>
             </div>
         </section>
-        <section class="flex flex-row w-full min-h-[calc(100vh-128px)] snap-center overflow-scroll border-b-2 border-black">
-            <div class="dlex flex-col w-2/3 h-full bg-black opacity-30">
-                <img src="" alt="">
+        <section
+            class="flex relative flex-col lg:flex-row w-full min-h-[calc(100vh-62px)] lg:min-h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black">
+            <div class="flex relative w-full lg:w-2/3 h-full border-b-2 border-black lg:border-none">
+                <div
+                    class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
+                    <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
+                    <img src="/src/assets/pot_roast.png" class="h-full w-full object-cover object-center" alt="">
+                </div>
+                <div
+                    class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
+                    <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
+                    <img src="/src/assets/pot_roast.png" class="h-full w-full object-cover object-center" alt="">
+                </div>
+                <div class="flex w-full h-full z-0">
+                    <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
+                </div>
             </div>
-            <div class="flex flex-col w-1/3 h-full border-l-2 border-black p-10 gap-4 font-medium">
+
+            <div
+                class="flex flex-col w-full lg:w-1/3 h-full lg:border-l-2  border-black  p-8 md:p-9 md:pt-8 gap-4 font-jost text-xl md:text-lg overflow-scroll">
                 <div class="flex flex-row gap-4">
                     <span class="material-symbols-outlined">
                         workspaces
@@ -83,26 +99,30 @@ const handleStepClick = (index: number) => {
                     </span>
                     <h5>Ready in 2 hours </h5>
                 </div>
+                <p class="mt-5 hyphens-auto text-xl md:text-lg">This prune pie makes for a lovely treat, and is a great pairing to a
+                    dessert wine that compliments its flavour profile. The only person less than pleased about this pie was
+                    grandpa, whenever his personal stach of prunes on the side table next to his armchair got raided to aid
+                    in its making whenever there weren't enough in the pantry.</p>
             </div>
         </section>
         <!-- Recipe content: -->
         <section class="flex flex-col scroll-smooth">
             <section
-                class="flex flex-col w-full p-10 min-h-[calc(100vh-128px)] snap-center overflow-scroll border-b-2 border-black"
+                class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
                 id="ingredients">
                 <h2 class="font-stinger text-4xl font-bold mb-8 -mt-2">Ingredients</h2>
                 <ol class="flex flex-col gap-4 font-jost text-xl flex-wrap">
-                    <li v-for="ingredient, idx in ingredients" :class="ingredient.checked ? 'line-through opacity-60' : ''"
+                    <li v-for="ingredient, idx in ingredients" :class="ingredient.checked ? 'line-through opacity-30' : ''"
                         @click="handleIngredientClick(idx)">{{ ingredient.name }}</li>
                 </ol>
             </section>
             <section
-                class="flex flex-col w-full p-10 min-h-[calc(100vh-128px)] snap-center overflow-scroll border-b-2 border-black"
+                class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start overflow-scroll"
                 id="#ingredients">
                 <h2 class="font-stinger text-4xl font-bold mb-8 -mt-2">Instructions</h2>
-                <ol class="flex flex-col gap-8 font-jost text-xl flex-wrap w-2/3">
+                <ol class="flex flex-col gap-8 font-jost text-xl flex-wrap w-full md:w-2/3">
                     <li v-for="step, idx in instructions"
-                        :class="`leading-[150%] ${step.checked ? 'line-through opacity-60' : ''}`"
+                        :class="`leading-[150%] hyphens-auto md:hyphens-none ${step.checked ? 'line-through opacity-30' : ''}`"
                         @click="handleStepClick(idx)">{{ step.text }}</li>
                 </ol>
             </section>
@@ -111,8 +131,6 @@ const handleStepClick = (index: number) => {
     </main>
 </template>
 
-<style scoped>
-* {
+<style scoped>* {
     user-select: none;
-}
-</style>
+}</style>
