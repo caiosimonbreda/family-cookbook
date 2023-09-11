@@ -99,7 +99,7 @@ const handleStepClick = (index: number) => {
                     </span>
                     <h5>Ready in 2 hours </h5>
                 </div>
-                <p class="mt-5 hyphens-auto text-xl md:text-lg">This prune pie makes for a lovely treat, and is a great pairing to a
+                <p class="mt-5 hyphens-none lg:hyphens-auto text-xl md:text-lg">This prune pie makes for a lovely treat, and is a great pairing to a
                     dessert wine that compliments its flavour profile. The only person less than pleased about this pie was
                     grandpa, whenever his personal stach of prunes on the side table next to his armchair got raided to aid
                     in its making whenever there weren't enough in the pantry.</p>
