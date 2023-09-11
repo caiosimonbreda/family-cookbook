@@ -24,7 +24,7 @@
 
 @layer base {
   html {
-    @apply h-full bg-gradient-to-br overflow-hidden from-amber-300 via-amber-400 to-amber-500 dark:bg-neutral-900;
+    @apply h-full bg-gradient-to-br overflow-hidden from-[#FFCF55] to-[#FFA836] dark:bg-neutral-900;
   }
   /* ... */
 }

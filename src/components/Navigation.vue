@@ -12,7 +12,7 @@
       <RouterLink to="/about" class="font-jost pb-1 text-xl cursor-pointer z-50">About</RouterLink>
     </div>
   </div>
-  <div class="hidden md:flex absolute outline outline-2 h-16 w-full bottom-0"></div>
+  <div class="hidden md:flex absolute outline outline-2 h-16 w-full bottom-0 z-50"></div>
   <section class="absolute w-full h-[calc(100%-64px)] md:w-[calc(100%-128px)] md:h-[calc(100%-128px)] md:left-16 top-16">
     <slot></slot>
   </section>
