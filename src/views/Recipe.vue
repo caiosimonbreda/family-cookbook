@@ -47,6 +47,7 @@ const handleStepClick = (index: number) => {
 
 <template>
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
+        <!-- Title -->
         <section
             class="flex flex-col w-full min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
             <h1 class="font-stinger text-[22vw] hyphens-auto md:text-[14.5vw] leading-[85%] p-8">{{ title }}</h1>
@@ -61,19 +62,20 @@ const handleStepClick = (index: number) => {
                 </a>
             </div>
         </section>
+        <!-- Presentation (image, story, info) -->
         <section
             class="flex relative flex-col lg:flex-row w-full min-h-[calc(100vh-62px)] lg:min-h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black">
             <div class="flex relative w-full lg:w-2/3 h-full border-b-2 border-black lg:border-none">
-                <div
+                <figure
                     class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
                     <img src="/src/assets/pot_roast.png" class="h-full w-full object-cover object-center" alt="">
-                </div>
-                <div
+                </figure>
+                <figure
                     class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
                     <img src="/src/assets/pot_roast.png" class="h-full w-full object-cover object-center" alt="">
-                </div>
+                </figure>
                 <div class="flex w-full h-full z-0">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
                 </div>
@@ -99,7 +101,8 @@ const handleStepClick = (index: number) => {
                     </span>
                     <h5>Ready in 2 hours </h5>
                 </div>
-                <p class="mt-5 hyphens-none lg:hyphens-auto text-xl md:text-lg">This prune pie makes for a lovely treat, and is a great pairing to a
+                <p class="mt-5 hyphens-none lg:hyphens-auto text-xl md:text-lg">This prune pie makes for a lovely treat, and
+                    is a great pairing to a
                     dessert wine that compliments its flavour profile. The only person less than pleased about this pie was
                     grandpa, whenever his personal stach of prunes on the side table next to his armchair got raided to aid
                     in its making whenever there weren't enough in the pantry.</p>
@@ -107,30 +110,77 @@ const handleStepClick = (index: number) => {
         </section>
         <!-- Recipe content: -->
         <section class="flex flex-col scroll-smooth">
+            <!-- Ingredients: -->
             <section
                 class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
                 id="ingredients">
-                <h2 class="font-stinger text-4xl font-bold mb-8 -mt-2">Ingredients</h2>
+                <h2 class="font-stinger text-[52px] font-bold mb-8 -mt-5">Ingredients</h2>
                 <ol class="flex flex-col gap-4 font-jost text-xl flex-wrap">
                     <li v-for="ingredient, idx in ingredients" :class="ingredient.checked ? 'line-through opacity-30' : ''"
                         @click="handleIngredientClick(idx)">{{ ingredient.name }}</li>
                 </ol>
             </section>
+            <!-- Instructions -->
             <section
-                class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start overflow-scroll"
+                class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
                 id="#ingredients">
-                <h2 class="font-stinger text-4xl font-bold mb-8 -mt-2">Instructions</h2>
+                <h2 class="font-stinger text-[52px] font-bold mb-8 -mt-5">Instructions</h2>
                 <ol class="flex flex-col gap-8 font-jost text-xl flex-wrap w-full md:w-2/3">
                     <li v-for="step, idx in instructions"
                         :class="`leading-[150%] hyphens-auto md:hyphens-none ${step.checked ? 'line-through opacity-30' : ''}`"
                         @click="handleStepClick(idx)">{{ step.text }}</li>
                 </ol>
             </section>
+            <!-- Author: -->
+            <section
+                class="flex relative flex-col lg:flex-row w-full min-h-[calc(100vh-62px)] lg:min-h-[calc(100vh-128px)] snap-start overflow-scroll"
+                id="#ingredients">
+                <!-- Figure/Image -->
+                <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
+                    <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
+                        <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
+                        <img src="/src/assets/mum.png" class="h-full w-full object-cover object-center" alt="">
+                    </figure>
+                </div>
+                <!-- Info -->
+                <div
+                    class="flex flex-col w-full lg:w-5/12 h-full lg:border-l-2  border-black p-8 md:p-9 md:pt-8 gap-4 font-jost text-xl md:text-lg overflow-scroll">
+                    <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg -mt-0.5">Recipe by</p>
+                    <h2 class="font-stinger text-[52px] font-bold mb-4 mt-1">Lara Simon</h2>
+                    <div class="flex flex-row gap-4 mt-0.5">
+                        <div class="flex flex-row gap-1 text-lg">
+                            <span class="material-symbols-outlined">
+                                star
+                            </span>
+                            <h5>1976</h5>
+                        </div>
+                        <div class="flex flex-row gap-1">
+                            <span class="material-symbols-outlined">
+                                note
+                            </span>
+                            <h5>4 recipes</h5>
+                        </div>
+                    </div>
+                    <p class="mt-8 hyphens-none lg:hyphens-auto text-xl md:text-lg">This is an abridged version of Lara's biography, which talks of her relation to the maintainer of the project and her general cooking prowess.
+                    </p>
+                    <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-0">Other recipes by lara include:
+                    </p>
+                    <ul class="flex flex-col gap-2 -mt-2 underline">
+                        <li>'La Vie En Rose' Pink Cake</li>
+                        <li>Mum's Shitaki Toss-up</li>
+                        <li>Whirlwind Cake</li>
+                    </ul>
+                </div>
+
+
+            </section>
         </section>
 
     </main>
 </template>
 
-<style scoped>* {
+<style scoped>
+* {
     user-select: none;
-}</style>
+}
+</style>
