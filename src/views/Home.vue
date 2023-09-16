@@ -239,7 +239,7 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
             </div>
         </section>
         <section class="flex flex-row w-full snap-start" id="recipe-list">
-            <ol class="flex flex-col gap-6 font-jost p-10 text-xl flex-wrap">
+            <ol class="flex flex-col gap-6 font-jost p-10 pt-9 text-xl flex-wrap">
                 <li class="cursor-pointer" v-for="recipe in recipeList" @click="goToRecipe(recipe)">{{
                     `${recipe.id}.${recipe.title}` }}</li>
             </ol>

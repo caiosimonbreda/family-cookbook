@@ -146,7 +146,7 @@ const handleStepClick = (index: number) => {
                 <div
                     class="flex flex-col w-full lg:w-5/12 h-full lg:border-l-2  border-black p-8 md:p-9 md:pt-8 gap-4 font-jost text-xl md:text-lg overflow-scroll">
                     <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg -mt-0.5">Recipe by</p>
-                    <h2 class="font-stinger text-[52px] font-bold mb-4 mt-1">Lara Simon</h2>
+                    <h2 class="font-stinger text-[52px] font-bold mb-2 mt-4">Lara Simon</h2>
                     <div class="flex flex-row gap-4 mt-0.5">
                         <div class="flex flex-row gap-1 text-lg">
                             <span class="material-symbols-outlined">
@@ -161,9 +161,9 @@ const handleStepClick = (index: number) => {
                             <h5>4 recipes</h5>
                         </div>
                     </div>
-                    <p class="mt-8 hyphens-none lg:hyphens-auto text-xl md:text-lg">This is an abridged version of Lara's biography, which talks of her relation to the maintainer of the project and her general cooking prowess.
+                    <p class="mt-4 hyphens-none lg:hyphens-auto text-xl md:text-lg">This is an abridged version of Lara's biography, which talks of her relation to the maintainer of the project and her general cooking prowess.
                     </p>
-                    <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-0">Other recipes by lara include:
+                    <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-3.5">Other recipes by lara include:
                     </p>
                     <ul class="flex flex-col gap-2 -mt-2 underline">
                         <li>'La Vie En Rose' Pink Cake</li>
