@@ -227,9 +227,12 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
         <section
             class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] max-h-[1000px] snap-center">
-            <h1 class="font-stinger text-[14vw] md:text-[12.5vw] leading-[85%] p-8">The family recipes that nurtured
+            <!-- <h1 class="font-stinger text-[14vw] md:text-[12.5vw] leading-[85%] p-8">The family recipes that nurtured
                 our
-                love of food</h1>
+                love of food</h1> -->
+            <h1 class="jumbotitle font-stinger leading-[85%] p-8 pt-4">The family recipes that nurtured
+            our
+            love of food</h1>
             <div class="flex flex-row w-full h-full items-end mb-24 md:mb-0">
                 <a href="#recipe-list
                 " class="relative w-fit mx-auto cursor-pointer animate-bounce mt-4"><span
@@ -241,11 +244,15 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
         <section class="flex flex-row w-full snap-start" id="recipe-list">
             <ol class="flex flex-col gap-6 font-jost p-10 pt-9 text-xl flex-wrap">
                 <li class="cursor-pointer" v-for="recipe in recipeList" @click="goToRecipe(recipe)">{{
-                    `${recipe.id}.${recipe.title}` }}</li>
+                    `${recipe.id}. ${recipe.title}` }}</li>
             </ol>
         </section>
 
     </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.jumbotitle {
+    font-size: clamp(5em, 10vw, 40em);
+}
+</style>
