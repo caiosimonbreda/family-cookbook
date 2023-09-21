@@ -231,8 +231,8 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
                 our
                 love of food</h1> -->
             <h1 class="jumbotitle font-stinger leading-[85%] p-8 pt-4">The family recipes that nurtured
-            our
-            love of food</h1>
+                our
+                love of food</h1>
             <div class="flex flex-row w-full h-full items-end mb-24 md:mb-0">
                 <a href="#recipe-list
                 " class="relative w-fit mx-auto cursor-pointer animate-bounce mt-4"><span
@@ -252,7 +252,34 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
 </template>
 
 <style scoped>
-.jumbotitle {
-    font-size: clamp(5em, 10vw, 40em);
+
+@media screen and (max-width: 20000px) {
+    .jumbotitle {
+        font-size: clamp(8em, 21.5vh, 80em);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .jumbotitle {
+        font-size: clamp(8em, 20vh, 80em);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .jumbotitle {
+        font-size: clamp(8em, 12vh, 40em);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .jumbotitle {
+        font-size: clamp(3rem, 16vh, 40em);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotitle {
+        font-size: clamp(3rem, 12vh, 40em);
+    }
 }
 </style>
