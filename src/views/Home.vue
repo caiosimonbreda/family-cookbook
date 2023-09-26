@@ -255,7 +255,8 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
 
 @media screen and (max-width: 20000px) {
     .jumbotitle {
-        font-size: clamp(8em, 21.5vh, 80em);
+        font-size: clamp(8em, 20.5vh, 80em);
+        line-height: 85%;
     }
 }
 
