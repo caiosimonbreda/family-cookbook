@@ -230,7 +230,7 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
             <!-- <h1 class="font-stinger text-[14vw] md:text-[12.5vw] leading-[85%] p-8">The family recipes that nurtured
                 our
                 love of food</h1> -->
-            <h1 class="jumbotitle font-stinger leading-[85%] p-8 pt-4">The family recipes that nurtured
+            <h1 class="jumbotitle font-stinger leading-[85%] p-10 pt-5">The family recipes that nurtured
                 our
                 love of food</h1>
             <div class="flex flex-row w-full h-full items-end mb-24 md:mb-0">

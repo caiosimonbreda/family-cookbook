@@ -69,18 +69,17 @@ const handleStepClick = (index: number) => {
                 <figure
                     class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                    <img src="/src/assets/pot_roast.png" class="h-full w-full object-cover object-center" alt="">
+                    <img src="/src/assets/cake.jpg" class="h-full w-full object-cover object-center" alt="">
                 </figure>
                 <figure
                     class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                    <img src="/src/assets/pot_roast.png" class="h-full w-full object-cover object-center" alt="">
+                    <img src="/src/assets/cake.jpg" class="h-full w-full object-cover object-center" alt="">
                 </figure>
                 <div class="flex w-full h-full z-0">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
                 </div>
             </div>
-
             <div
                 class="flex flex-col w-full lg:w-1/3 h-full lg:border-l-2  border-black  p-8 md:p-9 md:pt-8 gap-4 font-jost text-xl md:text-lg overflow-scroll">
                 <div class="flex flex-row gap-4">
@@ -139,14 +138,14 @@ const handleStepClick = (index: number) => {
                 <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
                     <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
                         <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                        <img src="/src/assets/mum.png" class="h-full w-full object-cover object-center" alt="">
+                        <img src="/src/assets/authors/diana.png" class="h-full w-full object-cover object-center" alt="">
                     </figure>
                 </div>
                 <!-- Info -->
                 <div
-                    class="flex flex-col w-full lg:w-5/12 h-full lg:border-l-2  border-black p-8 md:p-9 md:pt-8 gap-4 font-jost text-xl md:text-lg overflow-scroll">
+                    class="flex flex-col w-full lg:w-5/12 h-full lg:border-l-2 border-black p-8 md:p-9 md:pt-8 gap-4 font-jost text-xl md:text-lg overflow-scroll">
                     <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg -mt-0.5">Recipe by</p>
-                    <h2 class="font-stinger text-[52px] font-bold mb-2 mt-4">Lara Simon</h2>
+                    <h2 class="font-stinger text-[52px] leading-[1] font-bold mb-2">Diana Francis</h2>
                     <div class="flex flex-row gap-4 mt-0.5">
                         <div class="flex flex-row gap-1 text-lg">
                             <span class="material-symbols-outlined">
