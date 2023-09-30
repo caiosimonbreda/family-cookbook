@@ -25,7 +25,7 @@ const instructionsRaw = [
     '1. Make a prune compote by pitting the plums and taking them to a stovetop to boil together with the syrup and 150 grams of sugar, and set aside.',
     '2. Dissolve the guava marmalade in half a cup of water, adding an optional tablespoon of sweet Martini if desired, then take it to the stovetop to boil. Set aside.',
     '3. Mix the butter with the sugar; then mix in the egg yolks, beating well. Next add the flour with the 3 teaspoons of baking powder mixed in, and don’t stop mixing. Add the condensed milk, then half the prune compote and half the goiabada. Lastly, mix in the egg whites (beaten to stiff peaks).',
-    '4. Roast in a buttered and floured rectangular oven pan. The remaining goiabada and prune compote will serve as a filling for the pie.',
+    '4. Bake in a buttered and floured rectangular oven pan. The remaining goiabada and prune compote will serve as a filling for the pie.',
 ]
 
 const instructionsObj = instructionsRaw.map((step) => {

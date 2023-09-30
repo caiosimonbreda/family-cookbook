@@ -35,9 +35,29 @@
                 </div>
             </section>
             <section class="flex flex-col w-full lg:w-3/12 overflow-scroll scroll-smooth border-l-2 border-black">
-                <figure v-for="_ in [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+                <figure
                     class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
                     <img src="/src/assets/mum.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <img src="/src/assets/lyscia.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <img src="/src/assets/roland.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <img src="/src/assets/andrea.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <img src="/src/assets/lyscia.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <img src="/src/assets/yvonne.png" class="h-full w-full object-cover object-center" alt="">
                 </figure>
             </section>
         </div>
