@@ -252,7 +252,6 @@ const goToRecipe = (recipe: typeof recipeList[0]) => {
 </template>
 
 <style scoped>
-
 @media screen and (max-width: 20000px) {
     .jumbotitle {
         font-size: clamp(8em, 20.5vh, 80em);
