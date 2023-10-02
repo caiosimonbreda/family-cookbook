@@ -36,32 +36,26 @@
             </section>
             <section class="flex flex-col w-full lg:w-3/12 overflow-scroll scroll-smooth border-l-2 border-black">
                 <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    class="flex relative flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <figcaption
+                        class="flex flex-col text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
+                        <h4 class="font-jost text-[2.2rem] font-semibold">Lara Simon</h4>
+                        <div class="flex flex-row w-full gap-6">
+                            <div class="flex flex-row gap-1.5 items-center font-thin">
+                                <span class="material-symbols-outlined text-2xl">
+                                    star
+                                </span>
+                                <p class="font-jost text-[1.45rem]">1976</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center">
+                                <span class="material-symbols-outlined text-2xl font-bold">
+                                    summarize
+                                </span>
+                                <p class="font-jost text-[1.45rem] font-thin">7 recipes</p>
+                            </div>
+                        </div>
+                    </figcaption>
                     <img src="/src/assets/authors/lara.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <img src="/src/assets/authors/claudia.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <img src="/src/assets/authors/roland.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <img src="/src/assets/authors/andrea.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <img src="/src/assets/authors/lyscia.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <img src="/src/assets/authors/yvonne.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <img src="/src/assets/authors/pedro.png" class="h-full w-full object-cover object-center" alt="">
                 </figure>
             </section>
         </div>

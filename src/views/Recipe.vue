@@ -160,9 +160,9 @@ const handleStepClick = (index: number) => {
                             <h5>4 recipes</h5>
                         </div>
                     </div>
-                    <p class="mt-4 hyphens-none lg:hyphens-auto text-xl md:text-lg">This is an abridged version of Lara's biography, which talks of her relation to the maintainer of the project and her general cooking prowess.
+                    <p class="mt-4 hyphens-none lg:hyphens-auto text-xl md:text-lg">This is an abridged version of Diana's biography, which talks of her relation to the maintainer of the project and her general cooking prowess.
                     </p>
-                    <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-3.5">Other recipes by lara include:
+                    <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-3.5">Other recipes by Diana include:
                     </p>
                     <ul class="flex flex-col gap-2 -mt-2 underline">
                         <li>'La Vie En Rose' Pink Cake</li>
