@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
+    <main class="flex flex-col w-full h-full overflow-scroll snap-both scroll-smooth">
         <div class="flex flex-col w-full snap-start lg:flex-row h-full">
-            <section class="flex flex-col w-full lg:w-9/12 h-[calc(100vh-128px)] overflow-y-auto scroll-smooth">
-                <div class="flex flex-col w-full min-h-[calc(100vh-128px)] snap-center border-b-2 border-black">
+            <section class="flex flex-col w-full lg:w-9/12 h-[calc(100vh-128px)] overflow-y-auto scroll-smooth snap-proximity snap-both">
+                <div class="flex flex-col w-full min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
                     <h1 class="jumbotitle font-stinger p-9 pt-5">Roots that run deep</h1>
                     <div class="flex flex-row w-full h-full items-end mb-24 md:mb-6">
                         <a href="#a-family-matter
@@ -16,7 +16,7 @@
                             </span></a>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 w-2/3 margin-auto min-h-[calc(100vh-128px)] snap-center p-12"
+                <div class="flex flex-col gap-7 w-2/3 margin-auto min-h-[calc(100vh-128px)] snap-start p-12"
                     id="a-family-matter">
                     <h2 class="font-stinger text-[52px] font-bold mb-0.5 -mt-5">A Family Matter</h2>
                     <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7]">
