@@ -1,0 +1,116 @@
+{
+    "authors": [
+        {
+            "id": "diana",
+            "name": "Diana Francis",
+            "recipes": [1, 2, 3, 40, 42, 117],
+            "birthYear": 1956,
+            "bio": ""
+        },
+        {
+            "id": "lara",
+            "name": "Lara Simon",
+            "recipes": [50, 52],
+            "birthYear": 1976,
+            "bio": ""
+        },
+        {
+            "id": "andrea",
+            "name": "Andrea Simon",
+            "recipes": [],
+            "birthYear": 1973,
+            "bio": ""
+        },
+        {
+            "id": "lyscia",
+            "name": "Lyscia Simon",
+            "recipes": [5],
+            "birthYear": 1981,
+            "bio": ""
+        },
+        {
+            "id": "claudia",
+            "name": "Claudia Simon",
+            "recipes": [28, 41, 90],
+            "birthYear": 1970,
+            "bio": ""
+        },
+        {
+            "id": "caio",
+            "name": "Caio Brêda",
+            "recipes": [],
+            "birthYear": 1996,
+            "bio": ""
+        },
+        {
+            "id": "leticia",
+            "name": "Leticia Simon",
+            "recipes": [],
+            "birthYear": 1999,
+            "bio": ""
+        },
+        {
+            "id": "juju",
+            "name": "Inalda Gatto",
+            "recipes": [],
+            "birthYear": 1952,
+            "bio": ""
+        },
+        {
+            "id": "natalia",
+            "name": "Natália Brêda",
+            "recipes": [],
+            "birthYear": 2009,
+            "bio": ""
+        },
+        {
+            "id": "paulo",
+            "name": "Paulo Brêda",
+            "recipes": [],
+            "birthYear": 1973,
+            "bio": ""
+        },
+        {
+            "id": "cynthia",
+            "name": "Cynthia Calado",
+            "recipes": [],
+            "birthYear": 1952,
+            "bio": ""
+        },
+        {
+            "id": "teresapacheco",
+            "name": "Teresa Pacheco",
+            "recipes": [125],
+            "birthYear": 1950,
+            "bio": ""
+        },
+        {
+            "id": "mailda",
+            "name": "Mailda Lessa",
+            "recipes": [],
+            "birthYear": 1957,
+            "bio": ""
+        },
+        {
+            "id": "soniasimon",
+            "name": "Sônia Simon",
+            "recipes": [],
+            "birthYear": 1954,
+            "bio": ""
+        },
+        {
+            "id": "andre",
+            "name": "André Simon",
+            "recipes": [25],
+            "birthYear": 1951,
+            "bio": ""
+        },
+        {
+            "id": "yvonne",
+            "name": "Yvonne Bechtinger",
+            "recipes": [39],
+            "birthYear": 1929,
+            "bio": ""
+        }
+    ]
+}
