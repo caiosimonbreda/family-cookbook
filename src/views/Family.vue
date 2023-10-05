@@ -37,21 +37,23 @@
             <section class="flex flex-col w-full lg:w-3/12 overflow-scroll scroll-smooth border-l-2 border-black">
                 <figure
                     class="flex relative flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <!-- author info overlay on hover -->
                     <figcaption
-                        class="flex flex-col text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
-                        <h4 class="font-jost text-[2.2rem] font-semibold">Lara Simon</h4>
-                        <div class="flex flex-row w-full gap-6">
+                        class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
+                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">Lara Simon</h4>
+                        <!-- birth year and recipes -->
+                        <div class="flex flex-col xl:flex-row w-full gap-1.5 xl:gap-6">
                             <div class="flex flex-row gap-1.5 items-center font-thin">
                                 <span class="material-symbols-outlined text-2xl">
                                     star
                                 </span>
-                                <p class="font-jost text-[1.45rem]">1976</p>
+                                <p class="author-overlay-info">1976</p>
                             </div>
                             <div class="flex flex-row gap-2 items-center">
                                 <span class="material-symbols-outlined text-2xl font-bold">
                                     summarize
                                 </span>
-                                <p class="font-jost text-[1.45rem] font-thin">7 recipes</p>
+                                <p class="author-overlay-info">7 recipes</p>
                             </div>
                         </div>
                     </figcaption>
@@ -69,5 +71,10 @@
     font-size: clamp(8em, 14vw, 18em);
     line-height: 85%;
     text-wrap: balance;
+}
+
+.author-overlay-info {
+    font-family: Jost, sans-serif;
+    font-size: 1.2rem;
 }
 </style>

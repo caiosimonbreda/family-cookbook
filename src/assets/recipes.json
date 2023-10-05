@@ -1,0 +1,369 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "author": "diana",
+            "recipeName": "Prune Pie",
+            "servings": 12,
+            "prepTime": "1 hour",
+            "totalTime":"2 hours",
+            "ingredients": [
+                "½ a can of condensed milk",
+                "5 eggs",
+                "250g butter",
+                "250g flour",
+                "250g sugar",
+                "1 small can of prunes in sugar syrup",
+                "½ a wheel of guava marmalade",
+                "3 teaspoons baking powder",
+                "150g white sugar for prune compote",
+                "[Icing] ½ a can of condensed milk",
+                "[Icing] 2 egg yolks",
+                "[Icing] 2 tablespoons of white sugar",
+                "[Icing] 1 cup of milk",
+                "[Icing] 1 tablespoon of cornstarch"
+            ],
+            "instructions": [
+                "Make a prune compote by pitting the plums and taking them to a stovetop to boil together with the syrup and 150 grams of sugar, and set aside.",
+                "Dissolve the guava marmalade in half a cup of water, adding an optional tablespoon of sweet Martini if desired, then take it to the stovetop to boil. Set aside.",
+                "Mix the butter with the sugar; then mix in the egg yolks, beating well. Next add the flour with the 3 teaspoons of baking powder mixed in, and don’t stop mixing. Add the condensed milk, then half the prune compote and half the goiabada. Lastly, mix in the egg whites (beaten to stiff peaks).",
+                "Roast in a buttered and floured rectangular oven pan. The remaining goiabada and prune compote will serve as a filling for the pie."
+            ]
+        },
+        {
+            "id": 2,
+            "recipeName": "Grandma’s Gnocchi",
+            "author": "diana",
+            "servings": 8,
+            "prepTime": "2 hours",
+            "totalTime":"2 hours",
+            "ingredients": [
+                "1 kg of potatoes",
+                "2 eggs",
+                "Flour",
+                "1 tablespoon of butter"
+            ],
+            "instructions": [
+                "Knead all the ingredients together and shape the resulting dough into small round pieces.",
+                "Cook in a pot with boiling salted water. When the pieces float to the surface, they’re done cooking.",
+                "Serve with sauces, meat, fish or shrimp."
+            ]
+        },
+        {
+            "id": 3,
+            "recipeName": "Bread Pudding",
+            "author": "diana",
+            "servings": 12,
+            "prepTime": "1 hour",
+            "totalTime":"1 day",
+            "ingredients": [
+                "1 large loaf of day-old bread",
+                "½ litre of milk",
+                "200g of raisins",
+                "100g of melted butter",
+                "2 tablespoons of ground parmesan",
+                "1 pinch of ground cloves",
+                "1 teaspoon of ground cinnamon",
+                "1 glass of wine (or guaraná)",
+                "5 eggs",
+                "Sugar & salt"
+            ],
+            "instructions": [
+                "A day in advance, place the raisins in wine to soak.",
+                "Cut the bread in thin slices and let it soak in warm milk. Strain after an hour.",
+                "Knead the bread, adding the eggs, cheese, raisins, butter, cinnamon and clove. Add sugar to taste.",
+                "Butter and flour the pan with a mixture of flour and cinnamon. Bake in a double boiler in a moderate oven."
+            ]
+        },
+        {
+            "id": 5,
+            "recipeName": "Milk Pudding Type II",
+            "author": "lyscia",
+            "servings": 12,
+            "prepTime": "1 hour",
+            "totalTime":"7 hours",
+            "ingredients": [
+                "1 can of condensed milk",
+                "2 cans of whole raw milk",
+                "3 eggs",
+                "1 coffee spoon of baking powder"
+            ],
+            "instructions": [
+                "Blend the ingredients together and pour into a caramelised oven pan.",
+                "Bake with a double boiler in a moderately hot oven.",
+                "Chill for at least six hours."
+            ]
+        },
+        {
+            "id": 28,
+            "recipeName": "“Gimme More” Cake",
+            "author": "claudia",
+            "servings": 12,
+            "prepTime": "30 minutes",
+            "totalTime":"1 hour",
+            "ingredients": [
+                "4 eggs",
+                "2 cups of sugar",
+                "2 cups of flour",
+                "250g of butter",
+                "1 tablespoon of baking powder",
+                "1 cup of milk",
+                "100g of ground parmesan cheese."
+            ],
+            "instructions": [
+                "In a separate bowl, beat the egg whites to soft peaks.",
+                "Mix well the butter and sugar, followed by the yolks, beating everything together to a uniform-looking cream.",
+                "Gradually add the flour and milk. Lastly, the baking powder and parmesan cheese.",
+                "Gently mix in the egg whites with a wooden spoon.",
+                "For a quick icing, mix one egg yolk, half a can of condensed milk, one tablespoon of butter and 3 tablespoons of chocolate powder, and mix on the stovetop till it reaches the desired texture."
+            ]
+        },
+        {
+            "id": 39,
+            "recipeName": "Grandma Yvonne’s 1, 2, 3, 4 Cake",
+            "author": "yvonne",
+            "servings": 12,
+            "prepTime": "30 minutes",
+            "totalTime":"1 hour",
+            "ingredients": [
+                "1 cup of milk or orange juice",
+                "1 cup of butter",
+                "1 dessert spoon of baking powder",
+                "2 cups of sugar",
+                "3 cups of flour (or 2 flour and 1 cornstarch)",
+                "4 eggs"
+            ],
+            "instructions": [
+                "In a separate bowl, beat the egg whites to soft peaks.",
+                "Mix together the sugar, butter and eggs. Slowly add the flour and milk. Baking powder goes in last.",
+                "Gently mix in the egg whites with a wooden spoon."
+            ]
+        },
+        {
+            "id": 25,
+            "recipeName": "Uncle Andre’s Passionfruit Poolside Smoothie",
+            "author": "andre",
+            "servings": 12,
+            "prepTime": "15 minutes",
+            "totalTime":"15 minutes",
+            "ingredients": [
+                "12 passionfruit",
+                "1 can of condensed milk",
+                "Half a bottle of cachaça or rum",
+                "Sugar to taste"
+            ],
+            "instructions": [
+                "Make about a litre’s worth of passionfruit juice, sweetened to taste.",
+                "Mix in the remaining ingredients and blend well.",
+                "Serve with ice"
+            ]
+        },
+        {
+            "id": 41,
+            "recipeName": "Coca-Cola Cake",
+            "author": "claudia",
+            "servings": 12,
+            "prepTime": "35 minutes",
+            "totalTime":"1 hour",
+            "ingredients": [
+                "250g of butter",
+                "250g of pitted prunes",
+                "2 cups of sugar",
+                "3 cups of flour",
+                "5 eggs",
+                "1 tablespoon of baking powder",
+                "1 medium bottle of Coca-Cola (1 litre)",
+                "Extra sugar for prune compote",
+                "[Icing] 1 can of condensed milk",
+                "[Icing] 1 tablespoon of butter",
+                "[Icing] 3 tablespoons of chocolate powder"
+            ],
+            "instructions": [
+                "Make a prune compote with the correct amount of water and sugar for a thick texture. Allow to cool to room temperature.",
+                "Beat the butter with the sugar until fluffy, then add in the yolks, the prune compote, the coke, the flower (already mixed with baking powder).",
+                "Carefully mix in the egg whites (beaten to stiff peaks).",
+                "For the icing, mix everything constantly over a stovetop till it boils. Cover the cake and fill in the middle as well."
+            ]
+        },
+        {
+            "id": 40,
+            "recipeName": "Royal Glacé",
+            "author": "diana",
+            "servings": "45",
+            "prepTime": "1 hour",
+            "totalTime":"1 hour",
+            "ingredients": [
+                "1kg of refined sugar",
+                "3 egg whites",
+                "1 lemon (juiced)"
+            ],
+            "instructions": [
+                "Put all of the sugar through a fine sieve.",
+                "Beat the egg whites to very stiff peaks.",
+                "Slowly add in the sugar, mixing well. When the mixture thickens, start adding in the lemon juice.",
+                "Keep mixing and adding sugar till it reaches the correct consistency (turn the bowl upside down – it’s ready if it doesn’t run)."
+            ]
+        },
+        {
+            "id": 42,
+            "recipeName": "Blender Pizza Dough",
+            "author": "diana",
+            "servings": 8,
+            "prepTime": "40 minutes",
+            "totalTime":"1 hour",
+            "ingredients": [
+                "1 cup of flour",
+                "1 cup of milk",
+                "½ a cup of olive oil",
+                "2 eggs",
+                "1 tablespoon of baking powder",
+                "2 tablespoons of powdered cheese",
+                "Salt to taste"
+            ],
+            "instructions": [
+                "Blend everything together, then spread over a buttered pizza pan. Save half for later.",
+                "Cover with desired toppings, then spread the rest of the dough.",
+                "Bake and serve while it’s still hot."
+            ]
+        },
+        {
+            "id": 50,
+            "recipeName": "Brioche Buns",
+            "servings": 16,
+            "prepTime": "1 hour",
+            "totalTime":"4 hours",
+            "author": "lara",
+            "ingredients": [
+                "1 cup of butter",
+                "1 cup of sugar",
+                "1 kg of flour",
+                "½ a tablespoon of salt",
+                "5 eggs",
+                "1¼ cup of milk",
+                "3 tablets of fresh bread yeast (approx. 100g)"
+            ],
+            "instructions": [
+                "Dissolve the yeast in a bit of warm milk.",
+                "Add in the flour, the beaten eggs, milk, sugar, salt and butter.",
+                "Knead well and let rise.",
+                "Shape the buns, filling with diced ham & cheese if desired. One may also add raisins.",
+                "Brush with beaten egg yolk and let rise some more, then bake in a hot oven."
+            ]
+        },
+        {
+            "id": 52,
+            "recipeName": "'Fake Shrimp' Sandwich Spread",
+            "author": "lara",
+            "servings": 12,
+            "prepTime": "1 hour",
+            "totalTime":"1 hour",
+            "ingredients": [
+                "[1] ½ a kg of tomatoes",
+                "[1] 4 cloves of garlic, crushed",
+                "[1] 1 finely chopped onion",
+                "[1] ½ a bunch of coriander",
+                "[1] ½ a bunch of scallions",
+                "[1] ½ a green bell pepper",
+                "[1] 1 tablespoon of olive oil",
+                "[1] tomato purée or ketchup",
+                "[2] 1 cup of milk",
+                "[2] 1 egg",
+                "[2] 1 heaping tablespoon of cornstarch",
+                "[2] Salt to taste",
+                "2 tablespoons of butter",
+                "50g of powdered parmesan"
+            ],
+            "instructions": [
+                "Cook every ingredient in group [1] till the skin on the tomatoes starts to peel off.",
+                "Blend with a small cup of water, and sieve.",
+                "The result will be a thin paste. Gradually add in group [2] and the butter, take to a stovetop and let thicken. Lastly, add in the cheese."
+            ]
+        },
+        {
+            "id": 90,
+            "recipeName": "Aunt Claudia's Chocolate Cake",
+            "author": "claudia",
+            "servings": 16,
+            "prepTime": "1 hour",
+            "totalTime":"1h 30min",
+            "ingredients": [
+                "6 eggs",
+                "500g of butter",
+                "4 cups of sugar",
+                "5 cups of flour",
+                "1 cup of chocolate powder",
+                "2 cups of milk",
+                "3 teaspoons of baking powder",
+                "2 teaspoons of vanilla essence",
+                "[Filling] 1 cup of milk",
+                "[Filling] 2 cups of sugar",
+                "[Filling] 3 tablespoons of chocolate powder",
+                "[Filling] 1 tablespoon of butter",
+                "[Filling] 3 tablespoons of corn syrup",
+                "[Filling] 3 egg yolks"
+            ],
+            "instructions": [
+                "Mix the butter and sugar well until the mixture is fluffy.",
+                "Add the yolks and, mixing constantly, gradually add the other ingredients.",
+                "Lastly, fold in the egg whites (beaten to stiff peaks).",
+                "Bake in a large cake pan, or in three separate pie pans and stack with filling in between each piece.",
+                "For the filling, mix everything together and take to a stovetop to thicken."
+            ]
+        },
+        {
+            "id": 117,
+            "recipeName": "‘Satin Pie’ Guava Pavée",
+            "author": "diana",
+            "servings": 12,
+            "prepTime": "1h 30min",
+            "totalTime":"4-6 hours",
+            "ingredients": [
+                "1 can of condensed milk",
+                "2 cans’ worth of whole milk",
+                "2 tablespoons of sugar",
+                "1 egg",
+                "1 small bottle of coconut milk",
+                "1 heaping tablespoon of flour",
+                "50g of powdered parmesan",
+                "1 teaspoon of vanilla",
+                "1 tablespoon of butter",
+                "1 can of cream",
+                "½ a disk of goiabada"
+            ],
+            "instructions": [
+                "Blend all ingredients except for the cream and the goiabada.",
+                "Pour the mixture into a deep enough oven-safe dish. Bake in the oven, then allow to cool.",
+                "Whip the cream with 2 tablespoons of sugar and pour over the baked batter.",
+                "Lastly, melt the goiabada with 2 tablespoons of water and delicately pour over the layer of cream.",
+                "Chill for a few hours before serving."
+            ]
+        },
+        {
+            "id": 125,
+            "recipeName": "Tereza Pacheco Coconut Cake",
+            "author": "terezapacheco",
+            "servings": 14,
+            "prepTime": "1 hour",
+            "totalTime":"1h 40min",
+            "ingredients": [
+                "1 stick of butter (200g)",
+                "1 can of condensed milk",
+                "2 cups of sugar",
+                "2 heaping teaspoons of baking powder",
+                "3 cups of flour",
+                "4 eggs",
+                "Shredded coconut",
+                "Goiabada",
+                "White wine",
+                "Powdered parmesan"
+            ],
+            "instructions": [
+                "Beat the butter and sugar well, then add in the eggs one by one.",
+                "Gradually add in the flour and baking powder, previously mixed and sieved.",
+                "Pour into a buttered and dusted cake pan.",
+                "Melt the goiabada in a splash of white wine, then spread it on top of the batter. Cover it with a layer of shredded coconut and pour the condensed milk on top. Finally, dust with the powdered parmesan and bake.",
+                "Cut in a cross-pattern, can be served in individual candy cups."
+            ]
+        }
+    ]
+}
