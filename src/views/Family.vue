@@ -4,21 +4,21 @@
 
 <template>
     <main class="flex flex-col w-full h-full overflow-scroll snap-both scroll-smooth">
-        <div class="flex flex-col w-full snap-start lg:flex-row h-full">
-            <section class="flex flex-col w-full lg:w-9/12 h-[calc(100vh-128px)] overflow-y-auto scroll-smooth snap-proximity snap-both">
-                <div class="flex flex-col w-full min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
+        <div class="flex flex-col w-full snap-start lg:flex-row h-full overflow-scroll scroll-smooth">
+            <section class="flex flex-col w-full lg:w-9/12 lg:h-[calc(100vh-128px)] overflow-none lg:overflow-y-auto scroll-smooth snap-proximity snap-both">
+                <div class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
                     <h1 class="jumbotitle font-stinger p-9 pt-5">Roots that run deep</h1>
-                    <div class="flex flex-row w-full h-full items-end mb-24 md:mb-6">
+                    <div class="flex flex-row w-full h-full items-end mb-20 md:mb-6">
                         <a href="#a-family-matter
                 " class="relative w-fit mx-auto cursor-pointer animate-bounce mt-4"><span
-                                class="material-symbols-outlined text-[60px] md:text-[75px] font-light">
+                                class="material-symbols-outlined text-[4.5rem] md:text-[75px] font-light">
                                 expand_more
                             </span></a>
                     </div>
                 </div>
-                <div class="flex flex-col gap-7 w-2/3 margin-auto min-h-[calc(100vh-128px)] snap-start p-12"
+                <div class="flex flex-col gap-7 w-full xl:w-2/3 margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-12"
                     id="a-family-matter">
-                    <h2 class="font-stinger text-[52px] font-bold mb-0.5 -mt-5">A Family Matter</h2>
+                    <h2 class="font-stinger text-[3.25rem] leading-[110%] font-bold mb-0.5 -mt-3">A Family Matter</h2>
                     <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                         et dolore magna aliqua. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur. In metus
@@ -34,9 +34,57 @@
                     </p>
                 </div>
             </section>
-            <section class="flex flex-col w-full lg:w-3/12 overflow-scroll scroll-smooth border-l-2 border-black">
+            <section class="flex flex-none flex-col w-full lg:w-3/12 border-t-2 lg:border-l-2 border-black lg:overflow-scroll">
                 <figure
-                    class="flex relative flex-col w-full h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <!-- author info overlay on hover -->
+                    <figcaption
+                        class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
+                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">Lara Simon</h4>
+                        <!-- birth year and recipes -->
+                        <div class="flex flex-col xl:flex-row w-full gap-1.5 xl:gap-6">
+                            <div class="flex flex-row gap-1.5 items-center font-thin">
+                                <span class="material-symbols-outlined text-2xl">
+                                    star
+                                </span>
+                                <p class="author-overlay-info">1976</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center">
+                                <span class="material-symbols-outlined text-2xl font-bold">
+                                    summarize
+                                </span>
+                                <p class="author-overlay-info">7 recipes</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <img src="/src/assets/authors/lara.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    <!-- author info overlay on hover -->
+                    <figcaption
+                        class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
+                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">Lara Simon</h4>
+                        <!-- birth year and recipes -->
+                        <div class="flex flex-col xl:flex-row w-full gap-1.5 xl:gap-6">
+                            <div class="flex flex-row gap-1.5 items-center font-thin">
+                                <span class="material-symbols-outlined text-2xl">
+                                    star
+                                </span>
+                                <p class="author-overlay-info">1976</p>
+                            </div>
+                            <div class="flex flex-row gap-2 items-center">
+                                <span class="material-symbols-outlined text-2xl font-bold">
+                                    summarize
+                                </span>
+                                <p class="author-overlay-info">7 recipes</p>
+                            </div>
+                        </div>
+                    </figcaption>
+                    <img src="/src/assets/authors/lara.png" class="h-full w-full object-cover object-center" alt="">
+                </figure>
+                <figure
+                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
                     <!-- author info overlay on hover -->
                     <figcaption
                         class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
