@@ -1,6 +1,6 @@
 declare module "url";
 
-type Recipe = {
+export interface Recipe {
   id: number;
   author: string;
   recipeName: string;
@@ -9,12 +9,12 @@ type Recipe = {
   totalTime: string;
   ingredients: string[];
   instructions: string[];
-};
+}
 
-type author = {
-  id: string,
-  name: string,
-  recipes: number[]
+export interface Author {
+  id: string;
+  name: string;
+  recipes: number[];
   birthYear: number;
   bio: string;
-};
+}
