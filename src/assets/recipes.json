@@ -189,7 +189,7 @@
             "id": 40,
             "recipeName": "Royal Glacé",
             "author": "diana",
-            "servings": "45",
+            "servings": 45,
             "prepTime": "1 hour",
             "totalTime":"1 hour",
             "ingredients": [
