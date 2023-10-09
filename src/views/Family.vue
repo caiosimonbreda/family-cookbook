@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { Recipe, Author } from '@/types/global'
+const props = defineProps<{
+  recipes: Recipe[]
+  authors: Author[]
+}>()
+
+console.log(props)
 
 </script>
 
@@ -36,76 +43,29 @@
             </section>
             <section class="flex flex-none flex-col w-full lg:w-3/12 border-t-2 lg:border-l-2 border-black lg:overflow-scroll">
                 <figure
+                    v-for="author in authors"
                     class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
                     <!-- author info overlay on hover -->
                     <figcaption
                         class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
-                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">Lara Simon</h4>
+                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">{{ author.name }}</h4>
                         <!-- birth year and recipes -->
                         <div class="flex flex-col xl:flex-row w-full gap-1.5 xl:gap-6">
                             <div class="flex flex-row gap-1.5 items-center font-thin">
                                 <span class="material-symbols-outlined text-2xl">
                                     star
                                 </span>
-                                <p class="author-overlay-info">1976</p>
+                                <p class="author-overlay-info">{{ author.birthYear }}</p>
                             </div>
                             <div class="flex flex-row gap-2 items-center">
                                 <span class="material-symbols-outlined text-2xl font-bold">
                                     summarize
                                 </span>
-                                <p class="author-overlay-info">7 recipes</p>
+                                <p class="author-overlay-info">{{ author.recipes.length + ' recipes' }}</p>
                             </div>
                         </div>
                     </figcaption>
-                    <img src="/src/assets/authors/lara.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <!-- author info overlay on hover -->
-                    <figcaption
-                        class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
-                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">Lara Simon</h4>
-                        <!-- birth year and recipes -->
-                        <div class="flex flex-col xl:flex-row w-full gap-1.5 xl:gap-6">
-                            <div class="flex flex-row gap-1.5 items-center font-thin">
-                                <span class="material-symbols-outlined text-2xl">
-                                    star
-                                </span>
-                                <p class="author-overlay-info">1976</p>
-                            </div>
-                            <div class="flex flex-row gap-2 items-center">
-                                <span class="material-symbols-outlined text-2xl font-bold">
-                                    summarize
-                                </span>
-                                <p class="author-overlay-info">7 recipes</p>
-                            </div>
-                        </div>
-                    </figcaption>
-                    <img src="/src/assets/authors/lara.png" class="h-full w-full object-cover object-center" alt="">
-                </figure>
-                <figure
-                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
-                    <!-- author info overlay on hover -->
-                    <figcaption
-                        class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">
-                        <h4 class="font-jost text-[2.2rem] font-semibold leading-[100%]">Lara Simon</h4>
-                        <!-- birth year and recipes -->
-                        <div class="flex flex-col xl:flex-row w-full gap-1.5 xl:gap-6">
-                            <div class="flex flex-row gap-1.5 items-center font-thin">
-                                <span class="material-symbols-outlined text-2xl">
-                                    star
-                                </span>
-                                <p class="author-overlay-info">1976</p>
-                            </div>
-                            <div class="flex flex-row gap-2 items-center">
-                                <span class="material-symbols-outlined text-2xl font-bold">
-                                    summarize
-                                </span>
-                                <p class="author-overlay-info">7 recipes</p>
-                            </div>
-                        </div>
-                    </figcaption>
-                    <img src="/src/assets/authors/lara.png" class="h-full w-full object-cover object-center" alt="">
+                    <img :src="`/src/assets/authors/${author.id}.png`" class="h-full w-full object-cover object-center" alt="">
                 </figure>
             </section>
         </div>

@@ -1,37 +1,28 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Recipe, Author } from '@/types/global'
+import { useRoute } from 'vue-router'
 
-const title = `'Sugar Plum Fairy' Prune Pie`
+const route = useRoute()
 
-const ingredientsRaw = [
-    '1/2 can of condensed milk',
-    '5 eggs',
-    '250g butter',
-    '250g flour',
-    '250g sugar',
-    '1 small can of prunes in sugar syrup',
-    '1/2 wheel of guava marmalade',
-    '3 teaspoons baking powder',
-    '150g white sugar for prune compote',
-]
+const props = defineProps<{
+  recipes: Recipe[]
+  authors: Author[]
+}>()
+const recipeId = Number(route.params.recipeId)
+const recipe = props.recipes.find(rec => rec.id === recipeId)!
 
-const ingredientsObj = ingredientsRaw.map((ing) => {
+const title = recipe.recipeName
+
+const ingredientsObj = recipe.ingredients.map((ing) => {
     return { name: ing, checked: false }
 })
-
 const ingredients = ref(ingredientsObj)
 
-const instructionsRaw = [
-    '1. Make a prune compote by pitting the plums and taking them to a stovetop to boil together with the syrup and 150 grams of sugar, and set aside.',
-    '2. Dissolve the guava marmalade in half a cup of water, adding an optional tablespoon of sweet Martini if desired, then take it to the stovetop to boil. Set aside.',
-    '3. Mix the butter with the sugar; then mix in the egg yolks, beating well. Next add the flour with the 3 teaspoons of baking powder mixed in, and don’t stop mixing. Add the condensed milk, then half the prune compote and half the goiabada. Lastly, mix in the egg whites (beaten to stiff peaks).',
-    '4. Bake in a buttered and floured rectangular oven pan. The remaining goiabada and prune compote will serve as a filling for the pie.',
-]
 
-const instructionsObj = instructionsRaw.map((step) => {
+const instructionsObj = recipe.instructions.map((step) => {
     return { text: step, checked: false }
 })
-
 const instructions = ref(instructionsObj)
 
 
