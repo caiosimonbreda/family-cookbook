@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { Recipe, Author } from '@/types/global'
+import { useRouter } from 'vue-router';
+
+const router = useRouter()
+
 const props = defineProps<{
   recipes: Recipe[]
   authors: Author[]
@@ -44,7 +48,8 @@ console.log(props)
             <section class="flex flex-none flex-col w-full lg:w-3/12 border-t-2 lg:border-l-2 border-black lg:overflow-scroll">
                 <figure
                     v-for="author in authors"
-                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2">
+                    class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2 cursor-pointer"
+                    @click="router.push(`/author/${author.id}`)">
                     <!-- author info overlay on hover -->
                     <figcaption
                         class="flex flex-col gap-2 xl:gap-2 text-white justify-end absolute w-full h-full opacity-0 hover:opacity-70 bg-black transition-opacity duration-200 p-8 pt-6">

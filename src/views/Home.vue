@@ -35,7 +35,7 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
         </section>
         <section class="flex flex-row w-full snap-start" id="recipe-list">
             <ol class="flex flex-col gap-6 font-jost p-10 pt-9 text-xl flex-wrap">
-                <li class="cursor-pointer" v-for="recipe in recipes" @click="goToRecipe(recipe)">{{
+                <li class="hover:text-2xl hover:leading-[120%] transition-all duration-200 cursor-pointer" v-for="recipe in recipes" @click="goToRecipe(recipe)">{{
                     `${recipe.id}. ${recipe.recipeName}` }}</li>
             </ol>
         </section>
