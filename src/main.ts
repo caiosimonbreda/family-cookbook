@@ -6,6 +6,7 @@ import HomeView from "./views/Home.vue";
 import FamilyView from "./views/Family.vue";
 import AboutView from "./views/About.vue";
 import RecipeView from "./views/Recipe.vue";
+import AuthorView from "./views/Author.vue"
 
 const router = createRouter({
   history: createWebHistory(),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: "/recipe/:recipeId",
       name: "Recipe",
       component: RecipeView,
+    },
+    {
+      path: "/author/:authorId",
+      name: "Author",
+      component: AuthorView,
     },
   ],
 });
