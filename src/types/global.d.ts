@@ -4,6 +4,7 @@ export interface Recipe {
   id: number;
   author: string;
   recipeName: string;
+  story: string;
   servings: number;
   prepTime: string;
   totalTime: string;
