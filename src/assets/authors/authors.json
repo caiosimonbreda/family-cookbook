@@ -24,7 +24,7 @@
         {
             "id": "lyscia",
             "name": "Lyscia Simon",
-            "recipes": [5],
+            "recipes": [5, 185, 256],
             "birthYear": 1981,
             "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
         },
@@ -38,7 +38,7 @@
         {
             "id": "caio",
             "name": "Caio Brêda",
-            "recipes": [],
+            "recipes": [291],
             "birthYear": 1996,
             "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
         },
@@ -52,14 +52,14 @@
         {
             "id": "juju",
             "name": "Inalda Gatto",
-            "recipes": [],
+            "recipes": [146],
             "birthYear": 1952,
             "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
         },
         {
             "id": "cynthia",
             "name": "Cynthia Calado",
-            "recipes": [],
+            "recipes": [179],
             "birthYear": 1952,
             "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
         },
@@ -73,14 +73,14 @@
         {
             "id": "mailda",
             "name": "Mailda Lessa",
-            "recipes": [],
+            "recipes": [255],
             "birthYear": 1957,
             "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
         },
         {
             "id": "soniasimon",
             "name": "Sônia Simon",
-            "recipes": [],
+            "recipes": [243],
             "birthYear": 1954,
             "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
         },

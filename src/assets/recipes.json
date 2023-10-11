@@ -409,6 +409,129 @@
       ]
     },
     {
+      "id": 179,
+      "recipeName": "Chocolate Mousse Type II",
+      "story": "Lorem ipsum dolor sit amet. This is a paragraph telling a little story about the recipe, most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!",
+      "author": "cynthia",
+      "servings": 8,
+      "prepTime": "45 minutes",
+      "totalTime": "6-8 hours",
+      "ingredients": [
+        "4 eggs",
+        "6 tablespoons of chocolate powder",
+        "1½ tablespoons of cornstarch",
+        "1½ cups of sugar",
+        "1 litre of whole milk (should be boiled if raw)",
+        "Salt, vanilla essence and butter"
+      ],
+      "instructions": [
+        "Separate the egg whites and beat them to stiff peaks.",
+        "Bring the milk, chocolate powder, sugar, cornstarch, salt, butter and vanilla to a boil, mixing until it thickens.",
+        "With a little bit of that mixture, break up the 4 yolks and mix that back into the previous pot to thicken further.",
+        "Lastly, mix in the egg whites with a slotted spoon without breaking up their grain too much.",
+        "Take to the refrigerator to cool."
+      ]
+    },
+    {
+      "id": 185,
+      "recipeName": "Econo-Chantilly",
+      "story": "Lorem ipsum dolor sit amet. This is a paragraph telling a little story about the recipe, most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!",
+      "author": "lyscia",
+      "servings": 10,
+      "prepTime": "1 hour",
+      "totalTime": "1 hour",
+      "ingredients": [
+        "3 egg whites",
+        "7 tablespoons of sugar",
+        "250g of butter",
+        "3 tablespoons of sugar",
+        "3 tablespoons of cornstarch",
+        "2 cups of milk"
+      ],
+      "instructions": [
+        "Mix the egg whites with 7 tablespoons of sugar in a bowl and heat them up in a double boiler for 2~3 minutes.",
+        "Mix until the texture is that of a foamy cream. Slowly add in the butter, mixing constantly. Reserve.",
+        "Take the 3 tablespoons of sugar, the milk and the cornstarch to the stovetop and bring to a boil, mixing constantly.",
+        "Take it off the heat and mix until it's cooled to being just finger-warm.",
+        "Pour over the previously reserved cream and mix till it reaches a homogenous texture."
+      ]
+    },
+    {
+        "id": 243,
+        "recipeName": "Big Ol' Chicken Puff",
+        "story": "Lorem ipsum dolor sit amet. This is a paragraph telling a little story about the recipe, most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!",
+        "author": "soniasimon",
+        "servings": 6,
+        "prepTime": "1 hour",
+        "totalTime": "1h 45min",
+        "ingredients": [
+            "[Dough] ½ kg of flour",
+            "[Dough] 300g of butter",
+            "[Dough] 150g of powdered parmesan",
+            "[Filling] 4 chicken breasts (seasoned, cooked and shredded)",
+            "[Filling] 1 cup of broth from when the chicken was cooked",
+            "[Filling] 2 cups of milk",
+            "[Filling] 6 tablespoons of flour",
+            "[Filling] 1 heaping tablespoon of butter",
+            "[Filling] 100g of powdered parmesan",
+            "[Filling] 4 egg yolks"
+        ],
+        "instructions": [
+            "Make the dough and let rest for 30 minutes.",
+            "Make the cream, mix in the chiken, throw in some olives and sweet corn or peas.",
+            "When assembling, set aside enough raw dough to cover.",
+            "Brush with egg yolks and oil and bake for 45 minutes."
+        ]
+    },
+    {
+      "id": 255,
+      "recipeName": "Chocolate Volcano Cake",
+      "story": "Lorem ipsum dolor sit amet. This is a paragraph telling a little story about the recipe, most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!",
+      "author": "mailda",
+      "servings": 12,
+      "prepTime": "45 minutes",
+      "totalTime": "1h 15min",
+      "ingredients": [
+        "2 cups of whole milk",
+        "2 cups of chocolate powder",
+        "2 cups of flour",
+        "2 cups of sugar",
+        "2 eggs",
+        "2 tablespoons of baking powder",
+        "200g of molten butter",
+        "[icing] 1 litre of whole milk",
+        "[icing] 1 tablespoon of butter",
+        "[icing] 1 cup of chocolate powder"
+      ],
+      "instructions": [
+        "For the cake, blend all of the ingredients together and bake in a buttered and dusted hole-in-the-middle pan.",
+        "If it passes the toothpick test as a usual cake would, you've baked for too long. This is a dense, gooey cake.",
+        "For the icing, take all of the ingredients to the stovetop to thicken a lot, then pour over the cake while still hot."
+      ]
+    },
+    {
+      "id": 256,
+      "recipeName": "Electr-O-Cake",
+      "story": "Lorem ipsum dolor sit amet. This is a paragraph telling a little story about the recipe, most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!",
+      "author": "lyscia",
+      "servings": 10,
+      "prepTime": "20 minutes",
+      "totalTime": "45 minutes",
+      "ingredients": [
+        "1 can of condensed milk",
+        "1 can of whole milk",
+        "½ a can of sugar",
+        "1 can of coconut milk",
+        "1 can of flour",
+        "3 tablespoons of powdered parmesan",
+        "3 tablespoons of butter"
+      ],
+      "instructions": [
+        "Blend all of the ingredients together.",
+        "Bake in a buttered and dusted cake pan."
+      ]
+    },
+    {
       "id": 291,
       "recipeName": "'Bar das Ostras' Shrimp: One More Time",
       "story": "Lorem ipsum dolor sit amet. This is a paragraph telling a little story about the recipe, most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!",
