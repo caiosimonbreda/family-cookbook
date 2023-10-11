@@ -66,7 +66,8 @@ console.log(props)
                                 <span class="material-symbols-outlined text-2xl font-bold">
                                     summarize
                                 </span>
-                                <p class="author-overlay-info">{{ author.recipes.length + (author.recipes.length === 1 ? ' recipe' : ' recipes') }}</p>
+                                <!-- <p class="author-overlay-info">{{ author.recipes.length + (author.recipes.length === 1 ? ' recipe' : ' recipes') }}</p> -->
+                                <p class="author-overlay-info">{{ recipes.filter((rec) => rec.author === author.id).length + (recipes.filter((rec) => rec.author === author.id).length === 1 ? ' recipe' : ' recipes') }}</p>
                             </div>
                         </div>
                     </figcaption>
