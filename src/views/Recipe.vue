@@ -9,6 +9,7 @@ const props = defineProps<{
     recipes: Recipe[]
     authors: Author[]
 }>()
+
 const recipeId = Number(route.params.recipeId)
 const recipe = props.recipes.find(recipe => recipe.id === recipeId)!
 const author = props.authors.find((author) => author.id === recipe.author)
@@ -35,10 +36,18 @@ const handleStepClick = (index: number) => {
     instructions.value[index].checked = !instructions.value[index].checked
 }
 
+// Loading animation:
+const isRecipeImageLoaded = ref(false)
+const isAuthorImageLoaded = ref(false)
+
+const onImageLoad = function() {
+    console.log("image loaded")
+}
+
 </script>
 
 <template>
-    <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
+    <main v-if="isRecipeImageLoaded && isAuthorImageLoaded" class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
         <!-- Title -->
         <section
             class="flex flex-col w-full min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
@@ -63,7 +72,7 @@ const handleStepClick = (index: number) => {
                 <figure
                     class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                    <img :src="`/src/assets/recipes/${recipe.id}.jpg`" class="h-full w-full object-cover object-center" alt="">
+                    <img @load="onImageLoad" :src="`/src/assets/recipes/${recipe.id}.jpg`" class="h-full w-full object-cover object-center" alt="">
                 </figure>
                 <figure
                     class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
@@ -128,7 +137,7 @@ const handleStepClick = (index: number) => {
                 <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
                     <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
                         <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                        <img :src="`/src/assets/authors/${author?.id}.png`" class="h-full w-full object-cover object-center"
+                        <img @load="onImageLoad" :src="`/src/assets/authors/${author?.id}.png`" class="h-full w-full object-cover object-center"
                             alt="">
                     </figure>
                 </div>
@@ -167,6 +176,9 @@ const handleStepClick = (index: number) => {
             </section>
         </section>
 
+    </main>
+    <main v-else class="flex flex-col w-full h-full">
+        haha
     </main>
 </template>
 

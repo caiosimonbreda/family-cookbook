@@ -18,10 +18,7 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
 <template>
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
         <section
-            class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] max-h-[1000px] snap-center">
-            <!-- <h1 class="font-stinger text-[14vw] md:text-[12.5vw] leading-[85%] p-8">The family recipes that nurtured
-                our
-                love of food</h1> -->
+            class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] max-h-[1000px]">
             <h1 class="jumbotitle font-stinger leading-[85%] p-10 pt-5">The family recipes that nurtured
                 our
                 love of food</h1>
@@ -33,7 +30,7 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
                     </span></a>
             </div>
         </section>
-        <section class="flex flex-row w-full snap-start" id="recipe-list">
+        <section class="flex flex-row w-full" id="recipe-list">
             <ol class="flex flex-col gap-6 font-jost p-10 pt-9 text-xl flex-wrap">
                 <li class="hover:text-2xl hover:leading-[120%] transition-all duration-200 cursor-pointer" v-for="recipe in recipes" @click="goToRecipe(recipe)">{{
                     `${recipe.id}. ${recipe.recipeName}` }}</li>
