@@ -26,7 +26,7 @@ authorsList.value = authors.authors
 <style>
 .fade-enter-active {
   opacity: 0;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 
 .fade-enter-to {
@@ -35,12 +35,12 @@ authorsList.value = authors.authors
 
 .fade-leave-active {
   transition-property: opacity;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 
 .fade-enter, .fade-leave-active {
   opacity: 0;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 
 </style>

@@ -40,44 +40,64 @@ const handleStepClick = (index: number) => {
 const isRecipeImageLoaded = ref(false)
 const isAuthorImageLoaded = ref(false)
 
-const onImageLoad = function() {
+const onImageLoad = function () {
     console.log("image loaded")
+    setTimeout(() => {
+        isRecipeImageLoaded.value = true
+        isAuthorImageLoaded.value = true
+    }, 500)
 }
 
 </script>
 
 <template>
-    <main v-if="isRecipeImageLoaded && isAuthorImageLoaded" class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
+    <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
+        <transition name="fade" mode="out-in">
+            <section id="loading" v-if="!isRecipeImageLoaded || !isAuthorImageLoaded"
+                class="absolute flex flex-col w-full h-full">
+
+                <div class="m-auto text-black inline-block h-24 w-24 animate-spin rounded-full border-2 border-solid border-current border-x-transparent align-[-0.125em] motion-reduce:animate-[spin_2s_linear_infinite]"
+                    role="status">
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+                </div>
+            </section>
+        </transition>
         <!-- Title -->
-        <section
-            class="flex flex-col w-full min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
-            <h1 class="font-stinger text-[22vw] hyphens-auto md:text-[14.5vw] leading-[85%] p-8 pt-4">{{ recipe.recipeName
-            }}
-            </h1>
-            <div class="flex flex-row w-full h-full items-end justify-end p-8 pb-24 md:p-8">
-                <a href="#ingredients">
-                    <button class="flex font-jost outline outline-2 outline-black text-xl items-center px-4 py-2">
-                        Get Cooking
-                        <span class="material-symbols-outlined pl-2">
-                            arrow_downward
-                        </span>
-                    </button>
-                </a>
-            </div>
-        </section>
+        <transition name="fade" mode="out-in">
+            <section v-show="isRecipeImageLoaded && isAuthorImageLoaded"
+                class="flex flex-col w-full min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
+                <h1 class="font-stinger text-[22vw] hyphens-auto md:text-[14.5vw] leading-[85%] p-8 pt-4">{{
+                    recipe.recipeName
+                }}
+                </h1>
+                <div class="flex flex-row w-full h-full items-end justify-end p-8 pb-24 md:p-8">
+                    <a href="#ingredients">
+                        <button class="flex font-jost outline outline-2 outline-black text-xl items-center px-4 py-2">
+                            Get Cooking
+                            <span class="material-symbols-outlined pl-2">
+                                arrow_downward
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </section>
+        </transition>
         <!-- Presentation (image, story, info) -->
-        <section
+        <section v-show="isRecipeImageLoaded && isAuthorImageLoaded"
             class="flex relative flex-col lg:flex-row w-full min-h-[calc(100vh-62px)] lg:min-h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black">
             <div class="flex relative w-full lg:w-2/3 h-full border-b-2 border-black lg:border-none">
                 <figure
                     class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                    <img @load="onImageLoad" :src="`/src/assets/recipes/${recipe.id}.jpg`" class="h-full w-full object-cover object-center" alt="">
+                    <img @load="onImageLoad" :src="`/src/assets/recipes/${recipe.id}.jpg`"
+                        class="h-full w-full object-cover object-center" alt="">
                 </figure>
                 <figure
                     class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                    <img :src="`/src/assets/recipes/${recipe.id}.jpg`" class="h-full w-full object-cover object-center" alt="">
+                    <img :src="`/src/assets/recipes/${recipe.id}.jpg`" class="h-full w-full object-cover object-center"
+                        alt="">
                 </figure>
                 <div class="flex w-full h-full z-0">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
@@ -107,7 +127,7 @@ const onImageLoad = function() {
             </div>
         </section>
         <!-- Recipe content: -->
-        <section class="flex flex-col scroll-smooth">
+        <section class="flex flex-col scroll-smooth" v-show="isRecipeImageLoaded && isAuthorImageLoaded">
             <!-- Ingredients: -->
             <section
                 class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
@@ -119,7 +139,7 @@ const onImageLoad = function() {
                 </ol>
             </section>
             <!-- Instructions -->
-            <section
+            <section v-if="isRecipeImageLoaded && isAuthorImageLoaded"
                 class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
                 id="#ingredients">
                 <h2 class="font-stinger text-[52px] font-bold mb-8 -mt-5">Instructions</h2>
@@ -130,15 +150,15 @@ const onImageLoad = function() {
                 </ol>
             </section>
             <!-- Author: -->
-            <section
+            <section v-show="isRecipeImageLoaded && isAuthorImageLoaded"
                 class="flex relative flex-col lg:flex-row w-full min-h-[calc(100vh-62px)] lg:min-h-[calc(100vh-128px)] snap-start overflow-scroll"
                 id="#ingredients">
                 <!-- Figure/Image -->
                 <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
                     <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
                         <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-                        <img @load="onImageLoad" :src="`/src/assets/authors/${author?.id}.png`" class="h-full w-full object-cover object-center"
-                            alt="">
+                        <img @load="onImageLoad" :src="`/src/assets/authors/${author?.id}.png`"
+                            class="h-full w-full object-cover object-center" alt="">
                     </figure>
                 </div>
                 <!-- Info -->
@@ -158,7 +178,8 @@ const onImageLoad = function() {
                             <span class="material-symbols-outlined">
                                 summarize
                             </span>
-                            <h5>{{ (moreRecipesByAuthor.length + 1) + (moreRecipesByAuthor.length === 0 ? ' recipe' : ' recipes') }}</h5>
+                            <h5>{{ (moreRecipesByAuthor.length + 1) + (moreRecipesByAuthor.length === 0 ? ' recipe' :
+                                'recipes') }}</h5>
                         </div>
                     </div>
                     <p class="mt-4 hyphens-none lg:hyphens-auto text-xl md:text-lg">{{ author?.bio }}
@@ -177,12 +198,10 @@ const onImageLoad = function() {
         </section>
 
     </main>
-    <main v-else class="flex flex-col w-full h-full">
-        haha
-    </main>
 </template>
 
 <style scoped>
 * {
     user-select: none;
-}</style>
+}
+</style>
