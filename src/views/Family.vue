@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Recipe, Author } from '@/types/global'
 import { useRouter } from 'vue-router';
-import { ref } from 'vue';
+import { ref, onUnmounted } from 'vue';
 
 const router = useRouter()
 
@@ -23,6 +23,29 @@ const onImageLoad = function () {
   }, 300)
 }
 
+const authorcarousel = ref<HTMLDivElement>()
+
+const isHoveringCarousel = ref<boolean>(false)
+
+const scrollInterval = setInterval(() => {
+  if (!isHoveringCarousel.value) {
+    authorcarousel.value!.scrollTop += 1
+  }
+}, 40)
+
+onUnmounted(() => {
+  clearInterval(scrollInterval)
+})
+
+
+const aFamilyMatter = ref<HTMLDivElement>()
+
+const scrollToSection = () => {
+  if (aFamilyMatter.value) {
+    aFamilyMatter.value.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 </script>
 
 <template>
@@ -39,15 +62,14 @@ const onImageLoad = function () {
       </section>
     </transition>
     <transition name="fade" mode="out-in">
-      <div v-show="haveAllImagesLoaded" class="flex flex-col w-full snap-start lg:flex-row h-full overflow-scroll scroll-smooth">
+      <div v-show="haveAllImagesLoaded" class="flex flex-col w-full snap-start lg:flex-row h-full overflow-scroll">
         <section
-          class="flex flex-col w-full lg:w-9/12 lg:h-[calc(100vh-128px)] overflow-none lg:overflow-y-auto scroll-smooth snap-proximity snap-both">
+          class="flex flex-col w-full lg:w-9/12 lg:h-[calc(100vh-128px)] overflow-none lg:overflow-y-auto snap-proximity snap-both">
           <div
             class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
             <h1 class="jumbotitle font-stinger p-9 pt-5">Roots that run deep</h1>
             <div class="flex flex-row w-full h-full items-end mb-20 md:mb-6">
-              <a href="#a-family-matter
-                " class="relative w-fit mx-auto cursor-pointer animate-bounce mt-4"><span
+              <a @click="aFamilyMatter?.scrollIntoView({behavior: 'smooth'})" class="relative w-fit mx-auto cursor-pointer animate-bounce mt-4"><span
                   class="material-symbols-outlined text-[4.5rem] md:text-[75px] font-light">
                   expand_more
                 </span></a>
@@ -55,7 +77,7 @@ const onImageLoad = function () {
           </div>
           <div
             class="flex flex-col gap-7 w-full xl:w-2/3 margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-12"
-            id="a-family-matter">
+            id="a-family-matter" ref="aFamilyMatter">
             <h2 class="font-stinger text-[3.25rem] leading-[110%] font-bold mb-0.5 -mt-3">A Family Matter</h2>
             <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -77,8 +99,8 @@ const onImageLoad = function () {
             </p>
           </div>
         </section>
-        <section
-          class="flex flex-none flex-col w-full lg:w-3/12 border-t-2 lg:border-l-2 border-black lg:overflow-scroll">
+        <section ref="authorcarousel" @mouseover="isHoveringCarousel = true" @mouseout="isHoveringCarousel = false"
+          class="flex flex-none flex-col w-full lg:w-3/12 border-t-2 lg:border-l-2 border-black lg:overflow-scroll scroll-smooth">
           <figure v-for="author in authors"
             class="flex relative flex-col h-full w-auto lg:w-full lg:h-auto mix-blend-luminosity z-10 opacity-80 border-black border-b-2 cursor-pointer"
             @click="router.push(`/author/${author.id}`)">
