@@ -49,7 +49,7 @@ const allRecipesByAuthor = props.recipes.filter((recipe) => { return recipe.auth
                 </div>
                 <p class="mt-4 hyphens-none lg:hyphens-auto text-xl md:text-lg">{{ author?.bio }}
                 </p>
-                <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-3.5">All recipes by {{ author?.name }}:
+                <p class="hyphens-none lg:hyphens-auto text-xl md:text-lg mt-3.5">Recipes by {{ author?.name }}:
                 </p>
                 <ul class="flex flex-col gap-2 -mt-2 underline cursor-pointer">
                     <li class="hover:text-2xl hover:leading-[120%] transition-all duration-200 cursor-pointer" v-for="recipe in allRecipesByAuthor" @click="router.push(`/recipe/${recipe.id}`)">{{ recipe.recipeName }}</li>

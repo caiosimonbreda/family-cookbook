@@ -5,63 +5,63 @@
             "name": "Diana Francis",
             "recipes": [1, 2, 3, 40, 42, 117],
             "birthYear": 1956,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "A visit to grandma's was always fun, we just loved playing around the ranch. But it was also a guarantee of not only fantastic food but a variety of it, all masterfully prepared at the most spacious kitchen I remember ever walking into. Grandma was always in a great mood, which rubbed off on people – and on Sunday lunch."
         },
         {
             "id": "lara",
             "name": "Lara Simon",
             "recipes": [50, 52],
             "birthYear": 1976,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "Who doesn't love mum's food? I know I always did. From her “amateur” home cook years having learned from my grandmother all the way to going to cooking college and working in fine dining, she's always been a source of inspiration that had me always keen to hone my skills and learn new tricks."
         },
         {
             "id": "andrea",
             "name": "Andrea Simon",
             "recipes": [],
             "birthYear": 1973,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "With an impeccable record as a host, she usually aims to impress. Elegant starters, entrées, wine pairing and a decadent dessert are all to be expected; and some of the recipes I've seen wow so many guests are here for the taking. "
         },
         {
             "id": "lyscia",
             "name": "Lyscia Simon",
             "recipes": [5, 185, 256],
             "birthYear": 1981,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "The youngest of the four sisters, but less years under her apron doesn't mean any less skill. With cooking college under her belt and years learning from grandma, there's plenty of both feel and technique to be found in her recipes – and a milk pudding to die for."
         },
         {
             "id": "claudia",
             "name": "Claudia Simon",
             "recipes": [28, 41, 90],
             "birthYear": 1970,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "The eldest of the four sisters and, according to herself, the least skilled in the kitchen, though you wouldn't know it by coming to visit: The hearty mushroom casserole and perfect moqueca capixaba will have you loosen your belt after the second plate."
         },
         {
             "id": "caio",
             "name": "Caio Brêda",
             "recipes": [291],
             "birthYear": 1996,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "That's me. I've been slowly making my way through the yellow notebook for the past few years, as well as gathering new recipes from family and friends, and even creating some of my own. I'll be feeding new material into this outrageously yellow website as I progress (and as new authors become old enough to pick up the pots and pans)."
         },
         {
             "id": "leticia",
             "name": "Leticia Simon",
             "recipes": [],
             "birthYear": 1999,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "Caught the cooking bug from grandma at a young age, playing with pots and pans on the kitchen floor as she cooked. Having grown up together had us cooking together often, and it remains a ritual whenever we're both visiting our parents and have enough time on our hands."
         },
         {
             "id": "juju",
             "name": "Inalda Gatto",
             "recipes": [146],
             "birthYear": 1952,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "As the most frequent host for gatherings on dad's side of the family, grandma's cooking was always a joy to behold – and her classics were ever present on holidays. Though they might not be in the original yellow notebook, some of those are going to make their way into this registry very soon."
         },
         {
             "id": "cynthia",
             "name": "Cynthia Calado",
             "recipes": [179],
             "birthYear": 1952,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "Aunt Cynthia has lived in a different city since we were born, so we didn't get to see her a whole lot. Whenever we did, though, we were reminded that making delightful food for your guests was a family staples. All of her recipes in the yellow notebook are favourites with asterisks next to their titles!"
         },
         {
             "id": "teresapacheco",
@@ -96,7 +96,7 @@
             "name": "Yvonne Bechtinger",
             "recipes": [39],
             "birthYear": 1929,
-            "bio": "Lorem ipsum dolor sit amet. This is a paragraph telling a little about the author, and their general cooking prowess. Most people will skip this. Sorry about the default text, I'm still writing all of these up. Promise they'll be all nice and heartfelt so you can feel bad about skipping them!"
+            "bio": "I never knew great-grandma Yvonne too well, having met her a total of two times in my entire life (she lives very far away), but some of the recipes I've learned as staples of our home cooking are all hers, as I was always reminded. I often wish we could've been closer, but remain glad that I get to pass on some of her originals and build on that legacy."
         }
     ]
 }
