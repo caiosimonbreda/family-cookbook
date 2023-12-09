@@ -8,7 +8,7 @@
   <div class="flex absolute outline outline-2 h-16 w-full z-50">
     <div class="flex flex-row ml-8 md:ml-16 h-16 gap-8 items-center md:pl-8 mt-0.5">
       <RouterLink to="/" class="font-jost pb-1 text-xl cursor-pointer z-50">Recipes</RouterLink>
-      <RouterLink to="/family" class="font-jost pb-1 text-xl cursor-pointer z-50">Family</RouterLink>
+      <RouterLink to="/history" class="font-jost pb-1 text-xl cursor-pointer z-50">History</RouterLink>
       <RouterLink to="/about" class="font-jost pb-1 text-xl cursor-pointer z-50">About</RouterLink>
     </div>
   </div>

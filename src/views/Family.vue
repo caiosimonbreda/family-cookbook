@@ -97,11 +97,11 @@ const aFamilyMatter = ref<HTMLDivElement>()
               repository for the contents of the yellow notebook that anyone can access. I'll also update it over time
               with new recipes that younger family members scavenge, create and perfect.
             </p>
-            <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] opacity-40 xl:w-2/3">
+            <!-- <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] opacity-40 xl:w-2/3">
               P.S.: You might notice an apparent lack of precision on the instructions in many of the entries. These
               recipes were shared between people with a lot of years under their aprons – the recipes are a product of
               their time and of the people who wrote them down, and I wouldn't dream of changing them.
-            </p>
+            </p> -->
             <div class="flex justify-start">
               <img class="flex w-1/2 md:w-5/12 lg:w-4/12 xl:w-3/12 mt-6" src="/src/assets/authors/signature.webp"
                 alt="Author's Signature: Caio Breda">

@@ -179,7 +179,7 @@ const onImageLoad = function () {
                 summarize
               </span>
               <h5>{{ (moreRecipesByAuthor.length + 1) + (moreRecipesByAuthor.length === 0 ? ' recipe' :
-                'recipes') }}</h5>
+                ' recipes') }}</h5>
             </div>
           </div>
           <p class="mt-4 hyphens-none lg:hyphens-auto text-xl md:text-lg">{{ author?.bio }}

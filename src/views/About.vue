@@ -1,4 +1,4 @@
-\<script setup lang="ts">
+<script setup lang="ts">
 
 </script>
 
@@ -9,12 +9,12 @@
 
             <div class="flex flex-row w-full h-full items-end justify-end p-8">
                 <button class="flex font-jost outline outline-2 outline-black text-xl items-center px-4 py-2">
-                    Get Cooking
+                    Go on then
                     <span
                         class="material-symbols-outlined pl-2">
                         arrow_downward
                     </span>
-                </button>
+                </button>rome
             </div>
         </section>
 

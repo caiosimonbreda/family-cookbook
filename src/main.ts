@@ -17,8 +17,8 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: "/family",
-      name: "Family",
+      path: "/history",
+      name: "History",
       component: FamilyView
     },
     {
