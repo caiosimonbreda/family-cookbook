@@ -76,7 +76,7 @@ const aFamilyMatter = ref<HTMLDivElement>()
             <h2 class="font-stinger text-[3.25rem] leading-[110%] font-bold mb-0.5 -mt-3">A Family Matter</h2>
             <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
               On what may have been a beautiful day in the mid 1980s, my maternal grandmother picked up a plain-looking
-              yellow notebook at the supermarket during a grocery run at my aunt Claudia's request. My aunt, about 16
+              yellow notebook at the store during a grocery run at my aunt Claudia's request. My aunt, about 16
               years old at the time, wanted to start noting down her mum's recipes.
             </p>
             <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
