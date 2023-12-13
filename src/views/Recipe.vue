@@ -80,7 +80,7 @@ const onImageLoad = function () {
           recipe.recipeName
         }}
         </h1>
-        <div class="flex flex-row w-full h-full items-end justify-end p-8 pb-24 md:p-8">
+        <!-- <div class="flex flex-row w-full h-full items-end justify-end p-8 pb-24 md:p-8">
           <a href="#ingredients">
             <button class="flex font-jost outline outline-2 outline-black text-xl items-center px-4 py-2">
               Get Cooking
@@ -89,7 +89,7 @@ const onImageLoad = function () {
               </span>
             </button>
           </a>
-        </div>
+        </div> -->
       </section>
     </transition>
     <!-- Presentation (image, story, info) -->
