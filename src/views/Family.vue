@@ -41,7 +41,6 @@ onUnmounted(() => {
   clearInterval(scrollInterval)
 })
 
-
 const aFamilyMatter = ref<HTMLDivElement>()
 
 </script>
@@ -75,7 +74,7 @@ const aFamilyMatter = ref<HTMLDivElement>()
             </div>
           </div>
           <div
-            class="flex flex-col gap-7 w-full margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-12 overflow-scroll"
+            class="flex flex-col gap-7 w-full margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-8 md:p-12 overflow-scroll"
             id="a-family-matter" ref="aFamilyMatter">
             <h2 class="font-stinger text-[3.25rem] leading-[110%] font-bold mb-0.5 -mt-3">A Family Matter</h2>
             <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
@@ -107,7 +106,7 @@ const aFamilyMatter = ref<HTMLDivElement>()
               their time and of the people who wrote them down, and I wouldn't dream of changing them.
             </p> -->
             <div class="flex justify-start">
-              <img class="flex w-1/2 md:w-5/12 lg:w-4/12 xl:w-3/12 mt-6" src="/src/assets/authors/signature.webp"
+              <img class="flex w-8/12 sm:w-1/2 md:w-5/12 lg:w-4/12 xl:w-3/12 2xl:w-2/12 mt-6" src="/src/assets/authors/signature.webp"
                 alt="Author's Signature: Caio Breda">
             </div>
           </div>
