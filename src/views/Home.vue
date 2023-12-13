@@ -18,7 +18,7 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
 <template>
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth">
         <section class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] overflow-hidden">
-            <h1 class="jumbotitle font-stinger leading-[85%] p-6 md:p-10 pt-5">The family recipes that nurtured
+            <h1 class="jumbotitle font-stinger leading-[85%] p-6 md:p-10 pt-5 md:pt-5">The family recipes that nurtured
                 our
                 love of food</h1>
             <div class="flex flex-row w-full h-full items-end md:mb-0 self-end">
@@ -30,7 +30,7 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
             </div>
         </section>
         <section class="flex flex-row w-full" id="recipe-list">
-            <ol class="flex flex-col gap-6 font-jost p-7 md:p-10 pt-9 text-xl flex-wrap">
+            <ol class="flex flex-col gap-6 font-jost p-8 md:p-10 pt-9 text-xl flex-wrap">
                 <li class="hover:text-2xl hover:leading-[120%] transition-all duration-200 cursor-pointer"
                     v-for="recipe in recipes" @click="goToRecipe(recipe)">{{
                         `${recipe.id}. ${recipe.recipeName}` }}</li>
@@ -58,9 +58,9 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .jumbotitle {
-        font-size: clamp(8em, 12svh, 40em);
+        font-size: clamp(8em, 19svh, 40em);
     }
 }
 
@@ -72,7 +72,7 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
 
 @media screen and (max-width: 600px) {
     .jumbotitle {
-        font-size: clamp(3rem, 11svh, 40em);
+        font-size: clamp(3rem, 10.5svh, 40em);
     }
 }
 
