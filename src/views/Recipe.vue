@@ -14,6 +14,14 @@ const recipeId = Number(route.params.recipeId)
 const recipe = props.recipes.find(recipe => recipe.id === recipeId)!
 const author = props.authors.find((author) => author.id === recipe.author)
 
+const getRecipeImageUrl = (id: number) => {
+  return new URL(`/src/assets/recipes/${id}.jpg`, import.meta.url).href;
+}
+
+const getAuthorImageUrl = (id: string) => {
+  return new URL(`/src/assets/authors/${id}.png`, import.meta.url).href;
+}
+
 const ingredientsObj = recipe.ingredients.map((ing) => {
   return { name: ing, checked: false }
 })
@@ -91,13 +99,13 @@ const onImageLoad = function () {
         <figure
           class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
           <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-          <img @load="onImageLoad" :src="`/src/assets/recipes/${recipe.id}.jpg`"
+          <img @load="onImageLoad" :src="getRecipeImageUrl(recipe.id)"
             class="h-full w-full object-cover object-center" alt="Recipe picture">
         </figure>
         <figure
           class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
           <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-          <img :src="`/src/assets/recipes/${recipe.id}.jpg`" class="h-full w-full object-cover object-center" alt="Recipe image">
+          <img :src="getRecipeImageUrl(recipe.id)" class="h-full w-full object-cover object-center" alt="Recipe image">
         </figure>
         <div class="flex w-full h-full z-0">
           <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
@@ -157,7 +165,7 @@ const onImageLoad = function () {
         <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
           <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
             <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-            <img @load="onImageLoad" :src="`/src/assets/authors/${author?.id}.png`"
+            <img @load="onImageLoad" :src="getAuthorImageUrl(author?.id)"
               class="h-full w-full object-cover object-center" alt="Author picture">
           </figure>
         </div>

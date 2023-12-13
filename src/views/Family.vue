@@ -10,6 +10,10 @@ const props = defineProps<{
   authors: Author[]
 }>()
 
+const getImageUrl = (id: string) => {
+ return new URL(`/src/assets/authors/${id}.png`, import.meta.url).href;
+};
+
 // Loading animation:
 const haveAllImagesLoaded = ref(false)
 let imageLoadCounter = 0;
@@ -137,7 +141,7 @@ const aFamilyMatter = ref<HTMLDivElement>()
                 </div>
               </div>
             </figcaption>
-            <img @load="onImageLoad" :src="`/src/assets/authors/${author.id}.png`"
+            <img @load="onImageLoad" :src="getImageUrl(author.id)"
               class="h-full w-full object-cover object-center" alt="Author picture">
           </figure>
         </section>
