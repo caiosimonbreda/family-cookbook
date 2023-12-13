@@ -26,7 +26,7 @@ const allRecipesByAuthor = props.recipes.filter((recipe) => { return recipe.auth
                 <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
                     <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
                     <img :src="`/src/assets/authors/${author?.id}.png`" class="h-full w-full object-cover object-center"
-                        alt="">
+                        alt="Author image">
                 </figure>
             </div>
             <!-- Info -->

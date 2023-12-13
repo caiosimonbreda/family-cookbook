@@ -138,7 +138,7 @@ const aFamilyMatter = ref<HTMLDivElement>()
               </div>
             </figcaption>
             <img @load="onImageLoad" :src="`/src/assets/authors/${author.id}.png`"
-              class="h-full w-full object-cover object-center" alt="">
+              class="h-full w-full object-cover object-center" alt="Author picture">
           </figure>
         </section>
       </div>
