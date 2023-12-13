@@ -165,7 +165,7 @@ const onImageLoad = function () {
         <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
           <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
             <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-            <img @load="onImageLoad" :src="getAuthorImageUrl(author?.id)"
+            <img @load="onImageLoad" :src="getAuthorImageUrl(author!.id)"
               class="h-full w-full object-cover object-center" alt="Author picture">
           </figure>
         </div>
