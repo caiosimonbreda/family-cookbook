@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-import { Recipe, Author } from '@/types/global'
+import { Recipe, Author } from '@/types/index'
 
 const router = useRouter()
 
@@ -76,3 +76,4 @@ const goToRecipe = (recipe: typeof props.recipes[0]) => {
     }
 }
 </style>
+@/types

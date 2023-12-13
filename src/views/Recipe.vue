@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Recipe, Author } from '@/types/global'
+import { Recipe, Author } from '@/types/index'
 import { useRouter, useRoute } from 'vue-router'
 
 const [router, route] = [useRouter(), useRoute()]
@@ -205,3 +205,4 @@ const onImageLoad = function () {
   user-select: none;
 }
 </style>
+@/types

@@ -3,7 +3,7 @@ import Navigation from './components/Navigation.vue'
 import recipes from './assets/recipes.json'
 import authors from './assets/authors/authors.json'
 import { ref } from 'vue'
-import { Recipe, Author } from '@/types/global'
+import { Recipe, Author } from '@/types/index'
 
 const recipeList = ref<Recipe[]>([])
 const authorsList = ref<Author[]>([])
@@ -43,4 +43,4 @@ authorsList.value = authors.authors
   transition-duration: 0.3s;
 }
 
-</style>
+</style>@/types

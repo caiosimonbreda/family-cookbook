@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Recipe, Author } from '@/types/global'
+import { Recipe, Author } from '@/types/index'
 import { useRouter } from 'vue-router';
 import { ref, onUnmounted } from 'vue';
 
@@ -159,4 +159,4 @@ const aFamilyMatter = ref<HTMLDivElement>()
   font-family: Jost, sans-serif;
   font-size: 1.2rem;
 }
-</style>
+</style>@/types

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Recipe, Author } from '@/types/global'
+import { Recipe, Author } from '@/types/index'
 import { useRouter, useRoute } from 'vue-router'
 
 const [router, route] = [useRouter(), useRoute()]
@@ -65,3 +65,4 @@ const allRecipesByAuthor = props.recipes.filter((recipe) => { return recipe.auth
     user-select: none;
 }
 </style>
+@/types
