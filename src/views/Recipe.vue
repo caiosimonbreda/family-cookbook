@@ -76,9 +76,8 @@ const onImageLoad = function () {
     <transition name="fade" mode="out-in">
       <section v-show="haveAllImagesLoaded"
         class="flex flex-col w-full min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
-        <h1 class="font-stinger text-[22vw] hyphens-auto md:text-[14.5vw] leading-[85%] p-8 pt-4">{{
-          recipe.recipeName
-        }}
+        <h1 class="font-stinger text-[22vw] jumbotitle p-8 pt-4">
+          {{recipe.recipeName}}
         </h1>
         <!-- <div class="flex flex-row w-full h-full items-end justify-end p-8 pb-24 md:p-8">
           <a href="#ingredients">
@@ -99,8 +98,8 @@ const onImageLoad = function () {
         <figure
           class="flex absolute flex-col w-full h-full mix-blend-luminosity opacity-100 hover:opacity-0 transition-opacity duration-700 z-10">
           <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-          <img @load="onImageLoad" :src="getRecipeImageUrl(recipe.id)"
-            class="h-full w-full object-cover object-center" alt="Recipe picture">
+          <img @load="onImageLoad" :src="getRecipeImageUrl(recipe.id)" class="h-full w-full object-cover object-center"
+            alt="Recipe picture">
         </figure>
         <figure
           class="flex absolute flex-col w-full h-full opacity-0 hover:opacity-90 transition-opacity duration-700 z-20">
@@ -138,7 +137,7 @@ const onImageLoad = function () {
     <section class="flex flex-col scroll-smooth" v-show="haveAllImagesLoaded">
       <!-- Ingredients: -->
       <section
-        class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
+        class="flex flex-col w-full p-9 md:p-10 min-h-[calc(100vh-62px)] md:min-h-[calc(100vh-128px)] snap-start overflow-scroll border-b-2 border-black"
         id="ingredients">
         <h2 class="font-stinger text-[52px] font-bold mb-8 -mt-5">Ingredients</h2>
         <ol class="flex flex-col gap-4 font-jost text-xl flex-wrap">
@@ -165,8 +164,8 @@ const onImageLoad = function () {
         <div class="flex relative w-full lg:w-7/12 h-full border-b-2 border-black lg:border-none">
           <figure class="flex absolute flex-col w-full h-full mix-blend-luminosity z-10 opacity-80">
             <!-- <div class="flex absolute h-full w-full bg-black opacity-5 top-0 left-0 z-50"></div> -->
-            <img @load="onImageLoad" :src="getAuthorImageUrl(author!.id)"
-              class="h-full w-full object-cover object-center" alt="Author picture">
+            <img @load="onImageLoad" :src="getAuthorImageUrl(author!.id)" class="h-full w-full object-cover object-center"
+              alt="Author picture">
           </figure>
         </div>
         <!-- Info -->
@@ -211,6 +210,37 @@ const onImageLoad = function () {
 <style scoped>
 * {
   user-select: none;
+}
+
+@media screen and (max-width: 20000px) {
+  .jumbotitle {
+    font-size: clamp(8em, 22vh, 80em);
+    line-height: 85%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .jumbotitle {
+    font-size: clamp(8em, 20svh, 80em);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .jumbotitle {
+    font-size: clamp(8em, 12svh, 40em);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jumbotitle {
+    font-size: clamp(3rem, 15.5svh, 40em);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotitle {
+    font-size: clamp(3rem, 11svh, 40em);
+  }
 }
 </style>
 @/types
