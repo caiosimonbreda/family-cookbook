@@ -35,16 +35,16 @@ const authorInfo = [
             <div class="flex flex-col gap-7 w-full margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-8 md:p-12 overflow-scroll"
                 id="a-family-matter" ref="aFamilyMatter">
                 <h2 class="font-stinger text-[3.25rem] leading-[110%] font-bold mb-0.5 -mt-3">General Info</h2>
-                <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
+                <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-5/12 2xl:w-4/12">
                     This project is a digital version of my family's old recipe notebook, created using Vue 3 + TS and
                     TailwindCSS. You can find me at <a class="underline" href="https://github.com/caiosimonbreda">Github</a> and <a class="underline" href="https://www.linkedin.com/in/caiosimonbreda/">LinkedIn</a>, or contact me through <a class="underline" href="mailto:caiosimonbreda@gmail.com">electronic mail</a>. 
                 </p>
-                <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
+                <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-5/12 2xl:w-4/12">
                     It's very much still a work in progress, and there's some quirks I'd still like to iron out
                     (opacity transitions are not supported on the filters I use in the author images, for one; and Safari
-                    doesn't play well with those filters at all).
+                    doesn't play well with those filters at all). I'm working on a solution!
                 </p>
-                <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
+                <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-5/12 2xl:w-4/12">
                     I'm also adding real pictures of the recipes as I cook them again – for the time being, I have used as
                     placeholders some Unsplash images from the following list of wonderful authors:
                 </p>
