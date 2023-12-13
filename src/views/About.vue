@@ -32,7 +32,7 @@ const authorInfo = [
     <main class="flex flex-col w-full h-full overflow-scroll snap-both snap-proximity scroll-smooth font-jost">
         <section
             class="flex flex-col w-full lg:h-[calc(100vh-128px)] overflow-none lg:overflow-y-auto snap-proximity snap-both">
-            <div class="flex flex-col gap-7 w-full margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-12 overflow-scroll"
+            <div class="flex flex-col gap-7 w-full margin-auto min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start p-8 md:p-12 overflow-scroll"
                 id="a-family-matter" ref="aFamilyMatter">
                 <h2 class="font-stinger text-[3.25rem] leading-[110%] font-bold mb-0.5 -mt-3">General Info</h2>
                 <p class="hyphens-none text-xl md:text-lg leading-normal lg:leading-[1.7] xl:w-2/3">
