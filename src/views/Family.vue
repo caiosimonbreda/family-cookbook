@@ -65,9 +65,9 @@ const aFamilyMatter = ref<HTMLDivElement>()
           <div
             class="flex flex-col w-full min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-128px)] snap-start border-b-2 border-black">
             <h1 class="jumbotitle font-stinger p-9 pt-5">Roots that run deep</h1>
-            <div class="flex flex-row w-full h-full items-end mb-20 md:mb-6">
+            <div class="flex flex-row w-full h-full items-end">
               <a @click="aFamilyMatter?.scrollIntoView({ behavior: 'smooth' })"
-                class="relative w-fit mx-auto cursor-pointer animate-bounce mt-4"><span
+                class="relative w-fit mx-auto cursor-pointer animate-bounce mb-3"><span
                   class="material-symbols-outlined text-[4.5rem] md:text-[75px] font-light">
                   expand_more
                 </span></a>
@@ -153,9 +153,39 @@ const aFamilyMatter = ref<HTMLDivElement>()
 
 <style scoped>
 .jumbotitle {
-  font-size: clamp(8em, 14vw, 18em);
   line-height: 85%;
   text-wrap: balance;
+}
+
+@media screen and (max-width: 20000px) {
+  .jumbotitle {
+    font-size: clamp(8em, 26vh, 80em);
+    line-height: 85%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .jumbotitle {
+    font-size: clamp(8em, 22.2svh, 80em);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .jumbotitle {
+    font-size: clamp(8em, 21.5svh, 40em);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jumbotitle {
+    font-size: clamp(3rem, 19svh, 40em);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotitle {
+    font-size: clamp(3rem, 14.9svh, 40em);
+  }
 }
 
 .author-overlay-info {
